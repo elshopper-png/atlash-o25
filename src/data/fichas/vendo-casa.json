@@ -1,0 +1,42 @@
+{
+  "slug": "vendo-casa",
+  "nombre": "Vendo Casa — Servicios Inmobiliarios",
+  "flyer": "/anunciantes/vendo-casa/flyer.png",
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51928636701",
+      "mensaje": "Hola, vi su anuncio en el Shopper Digital y me interesa sus servicios inmobiliarios. 🏡"
+    },
+    "volver": {
+      "activo": true
+    },
+    "ubicacion": {
+      "activo": false
+    },
+    "video": {
+      "activo": false
+    },
+    "carrusel": {
+      "activo": false
+    },
+    "oferta": {
+      "activo": false
+    },
+    "rrss": {
+      "activo": false
+    }
+  },
+  "vivosMap": {
+    "whatsapp": {
+      "top": "86%",
+      "left": "79%",
+      "width": "15%"
+    },
+    "volver": {
+      "top": "95%",
+      "left": "85%",
+      "width": "12%"
+    }
+  }
+}

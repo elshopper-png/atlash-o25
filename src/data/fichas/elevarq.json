@@ -1,0 +1,64 @@
+{
+  "slug": "elevarq",
+  "nombre": "Elevarq — Construcción & Acabados",
+
+  "flyer": "/anunciantes/elevarq/flyer.png",
+
+  "whatsapp": "51967324909",
+  "whatsappMessage": "Hola señores de Elevarq, vi su anuncio en el Shopper Digital y deseo hacerles una consulta. 😊",
+
+  "mapa_url": "",
+  "video_url": "",
+  "gallery": [],
+
+  "vivos": {
+    "ubicacion": { "activo": false },
+    "whatsapp": { "activo": true },
+    "carrusel": { "activo": false },
+    "video": { "activo": false },
+    "facebook": { "activo": false },
+    "instagram": { "activo": false },
+    "tiktok": { "activo": false },
+    "web": { "activo": false },
+    "email": { "activo": false },
+
+    "oferta": {
+      "activo": true,
+      "imagen": "/anunciantes/elevarq/oferta.png",
+      "animacion": "side-to-side"
+    },
+
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "ubicacion": null,
+
+    "whatsapp": {
+      "top": "77%",
+      "left": "51%",
+      "width": "12%"
+    },
+
+    "carrusel": null,
+    "video": null,
+    "facebook": null,
+    "instagram": null,
+    "tiktok": null,
+    "web": null,
+    "email": null,
+
+    "oferta": {
+      "top": "82%",
+      "left": "65%",
+      "width": "36%",
+      "transform": "translateX(-50%)"
+    },
+
+    "volver": {
+      "top": "94%",
+      "left": "83%",
+      "width": "16%"
+    }
+  }
+}

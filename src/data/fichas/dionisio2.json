@@ -1,0 +1,45 @@
+{
+  "slug": "dionisio2",
+  "nombre": "Dionisio Rodríguez",
+  "giroSlug": "hogar-servicios",
+  "giro": "Hogar & Servicios",
+
+  "flyer": "/anunciantes/dionisio2/flyer.png",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+Carlos+Izaguirre+1083,+Los+Olivos+15301/"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51990281633",
+      "mensaje": "Hola Dionisio Rodríguez, vi su anuncio en el Shopper Digital y necesito de sus servicios de gasfitería. 💧🛠️"
+    },
+
+    "video": { "activo": false },
+
+    "carrusel": {
+      "activo": false,
+      "fotos": []
+    },
+
+    "oferta": {
+      "activo": true,
+      "imagen": "/anunciantes/dionisio2/oferta.png",
+      "animacion": "side-to-side",
+      "clickeable": false,
+      "posicion": "abajo"
+    },
+
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "whatsapp": { "top": "85%", "left": "88%", "width": "10%" },
+    "ubicacion": { "top": "85%", "left": "02%", "width": "10%" },
+    "oferta": { "top": "86%", "left": "48%", "width": "40%" },
+    "volver": { "top": "95%", "left": "89%", "width": "12%" }
+  }
+}

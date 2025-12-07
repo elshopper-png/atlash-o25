@@ -1,0 +1,58 @@
+{
+  "slug": "caserito",
+  "nombre": "Caserito Regalón — Gas a Domicilio",
+
+  "flyer": "/anunciantes/caserito/flyer.png",
+
+  "whatsapp": "51979743597",
+  "whatsappMessage": "Hola Caserito Regalón, quiero hacer un pedido de gas. 😊",
+
+  "mapa_url": "",
+  "video_url": "",
+  "gallery": [],
+
+  "vivos": {
+    "telefono1": { "activo": true, "numero": "015337134" },
+    "telefono2": { "activo": true, "numero": "013876443" },
+
+    "whatsapp1": {
+      "activo": true,
+      "numero": "51979743597",
+      "mensaje": "Hola Caserito Regalón, quiero hacer un pedido de gas. 😊"
+    },
+    "whatsapp2": {
+      "activo": true,
+      "numero": "51979549609",
+      "mensaje": "Hola Caserito Regalón, quiero hacer un pedido de gas. 😊"
+    },
+
+    "oferta": {
+      "activo": true,
+      "imagen": "/anunciantes/caserito/oferta.png",
+      "animacion": "latido-fuerte"
+    },
+
+    "ubicacion": { "activo": false },
+    "carrusel": { "activo": false },
+    "video": { "activo": false },
+
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "telefono1": { "top": "88%", "left": "37%", "width": "12%" },
+    "telefono2": { "top": "88%", "left": "53%", "width": "12%" },
+
+    "whatsapp1": { "top": "88%", "left": "70%", "width": "12%" },
+    "whatsapp2": { "top": "88%", "left": "86%", "width": "12%" },
+
+    "oferta": {
+      "top": "40%",
+      "left": "25%",
+      "width": "50%",
+      "transform": "translateX(-50%)"
+    },
+
+    "volver": { "top": "95%", "left": "85%", "width": "16%" }
+  }
+}

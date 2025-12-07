@@ -1,0 +1,33 @@
+{
+  "slug": "mascota",
+  "nombre": "Zona Mascota",
+  "flyer": "/anunciantes/mascota/flyer.png",
+
+  "vivos": {
+    "whatsapp1": {
+      "activo": true,
+      "numero": "51957503437",
+      "mensaje": "Hola Zona Mascota, vi su anuncio en el Shopper Digital y deseo hacerles unas preguntas sobre mi mascota. 🐾"
+    },
+
+    "whatsapp2": {
+      "activo": true,
+      "numero": "51944068832",
+      "mensaje": "Hola Zona Mascota, vi su anuncio en el Shopper Digital y deseo hacerles unas preguntas sobre mi mascota. 🐾"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp1": { "top": "93%", "left": "5%", "width": "13%" },
+    "whatsapp2": { "top": "93%", "left": "23%", "width": "13%" },
+    "volver": {
+      "top": "94%",
+      "left": "87%",
+      "width": "13%"
+    }
+  }
+}

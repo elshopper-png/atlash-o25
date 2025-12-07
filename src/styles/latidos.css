@@ -1,0 +1,37 @@
+/* ============================================================
+   latidos.css — Animaciones OMEGA-25
+   ============================================================ */
+
+/* Latido para WhatsApp y Ubicación */
+.o25-latido {
+  animation: o25-latido 1.3s ease-in-out infinite;
+}
+
+@keyframes o25-latido {
+  0% {
+    transform: translate(-50%, 0) scale(1);
+  }
+  50% {
+    transform: translate(-50%, 0) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+/* Oferta side-to-side */
+.o25-oferta-anim {
+  animation: o25-oferta-side 1.4s ease-in-out infinite;
+}
+
+@keyframes o25-oferta-side {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-48%, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}

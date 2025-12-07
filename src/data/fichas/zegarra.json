@@ -1,0 +1,67 @@
+{
+  "slug": "zegarra",
+  "nombre": "Técnico Zegarra",
+  "flyer": "/anunciantes/zegarra/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51998069866",
+      "mensaje": "Hola técnico Zegarra, vi su anuncio en el Shopper Digital y necesito de sus servicios para arreglar un electrodoméstico. 🔧"
+    },
+
+    "telefono1": {
+      "activo": true,
+      "numero": "015218323"
+    },
+
+    "ubicacion": {
+      "activo": false
+    },
+
+    "video": {
+      "activo": false
+    },
+
+    "carrusel": {
+      "activo": false
+    },
+
+    "oferta": {
+      "activo": false
+    },
+
+    "rrss": {
+      "facebook": null,
+      "instagram": null,
+      "tiktok": null,
+      "youtube": null
+    },
+
+    "web": null,
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "92%",
+      "left": "53%",
+      "width": "12%"
+    },
+
+    "telefono1": {
+      "top": "92%",
+      "left": "71%",
+      "width": "12%"
+    },
+
+    "volver": {
+      "top": "94%",
+      "left": "87%",
+      "width": "13%"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "kuya",
+  "nombre": "Kuya Jewelry",
+
+  "flyer": "/anunciantes/kuya/flyer.png",
+  "video_url": "/anunciantes/kuya/video.mp4",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51923049845",
+      "mensaje": "Hola joyería Kuya, vi su anuncio en el Shopper Digital y deseo más información. ✨"
+    },
+
+    "video": { "activo": true },
+    "volver": { "activo": true },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/perukuya/"
+    },
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/kuyaperujoyeria/?igsh=NzVjdHRkbnF2aWZi#"
+    },
+    "youtube": {
+      "activo": true,
+      "url": "https://www.youtube.com/@-KuyaPeru-"
+    },
+    "tiktok": {
+      "activo": true,
+      "url": "https://www.tiktok.com/@joyeriakuya?_r=1&_t=ZS-91yoz4GMngL"
+    },
+    "web": {
+      "activo": true,
+      "url": "https://kuyajewelry.com/"
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "86%",
+      "left": "45%",
+      "width": "13%"
+    },
+
+    "video": {
+      "top": "84%",
+      "left": "70%",
+      "width": "24%"
+    },
+
+    "volver": {
+      "top": "95%",
+      "left": "89%",
+      "width": "12%"
+    },
+
+    "facebook": {
+      "top": "93%",
+      "left": "5%",
+      "width": "11%"
+    },
+    "instagram": {
+      "top": "93%",
+      "left": "20%",
+      "width": "11%"
+    },
+    "youtube": {
+      "top": "93%",
+      "left": "34%",
+      "width": "11%"
+    },
+    "tiktok": {
+      "top": "93%",
+      "left": "48%",
+      "width": "11%"
+    },
+    "web": {
+      "top": "93%",
+      "left": "62%",
+      "width": "11%"
+    }
+  }
+}

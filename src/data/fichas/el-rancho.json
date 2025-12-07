@@ -1,0 +1,41 @@
+{
+  "slug": "el-rancho",
+  "nombre": "El Rancho — Parrillas & Antojitos",
+  "flyer": "/anunciantes/el-rancho/flyer.png",
+
+  "whatsapp": "519XXXXXXXX",
+  "whatsappMessage": "Hola, vi su anuncio en el Shopper Digital y deseo más información. 😊",
+
+  "mapa_url": "https://www.google.com.pe/maps/place/Av.+Ang%C3%A9lica+Gamarra+240,+Los+Olivos+15302/@-12.0039884,-77.0639632,17z/data=!4m6!3m5!1s0x9105cefbeb62f0e5:0xcf125f9f26997802!8m2!3d-12.0043938!4d-77.06329!16s%2Fg%2F11xvmw2h6b?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D",
+
+  "video_url": "",
+  
+  "gallery": [
+    "/anunciantes/el-rancho/1.png",
+    "/anunciantes/el-rancho/2.png",
+    "/anunciantes/el-rancho/3.png",
+    "/anunciantes/el-rancho/4.png",
+    "/anunciantes/el-rancho/5.png"
+  ],
+
+  "vivos": {
+    "ubicacion": { "activo": true },
+    "whatsapp": { "activo": false },
+    "carrusel": { "activo": true },
+    "video": { "activo": false },
+    "oferta": { "activo": false },
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "92%", "left": "09%", "width": "12%" },
+    "whatsapp": { "top": "68%", "left": "80%", "width": "12%" },
+    "carrusel": {
+      "top": "62%",
+      "left": "30%",
+      "width": "58%",
+      "transform": "translateX(-50%)"
+    },
+    "volver": { "top": "94%", "left": "83%", "width": "16%" }
+  }
+}

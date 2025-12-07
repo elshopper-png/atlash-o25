@@ -1,0 +1,140 @@
+/* ============================================================
+   🔒 FLYER SHELL O25 — ENCAPSULADO UNIVERSAL (RESTAURADO)
+   ============================================================ */
+
+.o25-wrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.o25-flyer-shell {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  padding-top: calc(14.2 / 6.4 * 100%) !important;
+  overflow: hidden !important;
+  background: #00000000 !important;
+}
+
+.o25-flyer-shell img.o25-flyer {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  clip-path: none !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+/* ============================================================
+   🟢 VIVOS BASE — OMEGA-25 (BLOQUE COMPLETO ACTUALIZADO)
+   ============================================================ */
+
+.o25-vivo {
+  position: absolute;
+  top: 0;            /* 🔥 requerido para que Chrome permita sobrescribir con ZonasAnclaO25 */
+  left: 0;           /* 🔥 requerido para que los % funcionen */
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.o25-vivo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* LATIDO */
+.o25-latido {
+  animation: o25-latido 1.2s ease-in-out infinite;
+}
+
+@keyframes o25-latido {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+/* ============================================================
+   GALERÍA / VIDEO
+   ============================================================ */
+
+.o25-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.o25-overlay-inner {
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.o25-overlay-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  z-index: 1;
+  font-size: 22px;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* GALERÍA */
+.o25-gallery {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.o25-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  background: #000;
+}
+
+/* VIDEO */
+.o25-video-wrapper video,
+.o25-video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  background: #000;
+}
+/* ============================================================
+   🔄 ANIMACIÓN SIDE TO SIDE PARA OFERTA O25
+   ============================================================ */
+.o25-oferta-move {
+  animation: o25-side-to-side 1.6s ease-in-out infinite;
+}
+
+@keyframes o25-side-to-side {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}

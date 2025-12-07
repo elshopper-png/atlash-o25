@@ -1,0 +1,46 @@
+/* ============================================================
+   O25 — Vivo Oferta
+   ============================================================ */
+
+.o25-oferta-wrapper {
+  position: absolute;
+  z-index: 999;
+  pointer-events: auto;
+  display: block;
+}
+
+/* Imagen siempre ocupa 100% del contenedor */
+.o25-oferta-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* ============================
+   SIDE TO SIDE
+   ============================ */
+
+@keyframes o25SideToSide {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+.o25-oferta-move {
+  animation: o25SideToSide 1.2s ease-in-out infinite;
+}
+
+/* ============================
+   LATIDO FUERTE
+   ============================ */
+
+@keyframes o25LatidoFuerte {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+.o25-oferta-move-strong {
+  animation: o25LatidoFuerte 0.8s ease-in-out infinite;
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "burga",
+  "nombre": "Centro de Medicina Regenerativa y Estética Integral",
+  "flyer": "/anunciantes/burga/flyer.png",
+
+  "whatsapp": "51991405449",
+  "whatsappMessage": "Hola doctora, vi su anuncio en el Shopper Digital y deseo más información. 😊",
+
+  "mapa_url": "https://www.google.com/maps/place/Av.+Santiago+Antunez+de+Mayolo+848,+Los+Olivos+15301/@-11.9926608,-77.0742416,17z/data=!3m1!4b1!4m6!3m5!1s0x9105ce5963606bd1:0x44f4712ae588f03c!8m2!3d-11.9926661!4d-77.0716667!16s%2Fg%2F11q2ng_sww",
+
+  "facebook": "",
+  "instagram": "",
+  "tiktok": "",
+  "web": "",
+  "email": "",
+
+  "video_url": "/anunciantes/burga/video.mp4",
+
+  "gallery": [
+    "/anunciantes/burga/1.png",
+    "/anunciantes/burga/2.png",
+    "/anunciantes/burga/3.png",
+    "/anunciantes/burga/4.png"
+  ],
+
+  "oferta": {
+    "activo": true,
+    "imagen": "/anunciantes/burga/oferta.png",
+    "link": "https://www.google.com/"
+  },
+
+  "vivos": {
+    "ubicacion": { "activo": true },
+    "whatsapp": { "activo": true },
+    "carrusel": { "activo": true },
+    "video": { "activo": false},
+    "facebook": { "activo": false },
+    "instagram": { "activo": false },
+    "tiktok": { "activo": false },
+    "web": { "activo": false },
+    "email": { "activo": false },
+    "oferta": { "activo": true, "animacion": "side-to-side" },
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "68%", "left": "11%", "width": "12%" },
+    "whatsapp": { "top": "75%", "left": "60%", "width": "11%" },
+
+    "carrusel": {
+      "top": "78%",
+      "left": "32%",
+      "width": "60%",
+      "transform": "translateX(-50%)"
+    },
+
+    "video": {
+      "top": "66.3%",
+      "left": "59%",
+      "width": "28%",
+      "transform": "translateX(-50%)"
+    },
+
+    "facebook": null,
+    "instagram": null,
+    "tiktok": null,
+    "web": null,
+    "email": null,
+
+    "oferta": { "top": "77%", "left": "61%", "width": "41%" },
+
+    "volver": { "top": "93.5%", "left": "82%", "width": "16%" }
+  }
+}

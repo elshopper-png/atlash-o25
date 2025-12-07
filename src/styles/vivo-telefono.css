@@ -1,0 +1,28 @@
+/* ============================================================
+   O25 — Vivos Teléfono (Versión Blindada)
+   ============================================================ */
+
+.o25-telefono-wrapper {
+  position: absolute;
+  display: block;
+  pointer-events: auto;
+  z-index: 30;
+}
+
+.o25-telefono-img {
+  width: 100% !important;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* Latido */
+@keyframes o25TelefonoLatido {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+.o25-telefono-latido {
+  animation: o25TelefonoLatido 1.3s ease-in-out infinite;
+}

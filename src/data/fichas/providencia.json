@@ -1,0 +1,107 @@
+{
+  "slug": "providencia",
+
+  "nombre": "Colegio Santa María de la Providencia",
+  "flyer": "/anunciantes/providencia/flyer.png",
+
+  "whatsapp": "51993330555",
+  "whatsappMessage": "Hola colegio Santa María de la Providencia, vi su anuncio en el Shopper Digital y deseo más información. 😊",
+
+  "mapa_url": "https://www.google.com/maps/place/IEP+Santa+Maria+de+la+Providencia/@-11.9922059,-77.0790929,17z/data=!4m6!3m5!1s0x9105ce5c2883bba5:0x55ab07cc2739d5a!8m2!3d-11.992368!4d-77.0780729!16s%2Fg%2F11c1szrxn8?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D",
+
+  "video_url": "/anunciantes/providencia/video.mp4",
+
+  "gallery": [
+    "/anunciantes/providencia/1.jpg",
+    "/anunciantes/providencia/2.jpg",
+    "/anunciantes/providencia/3.jpg",
+    "/anunciantes/providencia/4.jpg",
+    "/anunciantes/providencia/5.jpg"
+  ],
+
+  "facebook": "https://www.facebook.com/smprovidencia",
+  "instagram": "https://www.instagram.com/colegiosmprovidencia/",
+  "tiktok": "https://www.tiktok.com/@colegiosmprovidencia",
+  "web": "https://smprovidencia.pe/",
+  "email": "info@smprovidencia.edu.pe",
+
+  "vivos": {
+    "ubicacion": { "activo": true },
+    "whatsapp": { "activo": true },
+    "carrusel": { "activo": true },
+    "video": { "activo": true },
+    "facebook": { "activo": true },
+    "instagram": { "activo": true },
+    "tiktok": { "activo": true },
+    "web": { "activo": true },
+    "email": { "activo": true },
+    "oferta": { "activo": false },
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+  "ubicacion": { 
+    "top": "63%", 
+    "left": "3%", 
+    "width": "12%" 
+  },
+
+  "whatsapp": { 
+    "top": "63%", 
+    "left": "84%", 
+    "width": "11%" 
+  },
+
+  "carrusel": { 
+    "top": "67%", 
+    "left": "38%", 
+    "width": "58%", 
+    "transform": "translateX(-50%)" 
+  },
+
+  "video": { 
+    "top": "68%", 
+    "left": "81%", 
+    "width": "30%", 
+    "transform": "translateX(-50%)" 
+  },
+
+  "facebook": { 
+    "top": "88%", 
+    "left": "12%", 
+    "width": "10%" 
+  },
+
+  "instagram": { 
+    "top": "88%", 
+    "left": "30%", 
+    "width": "10%" 
+  },
+
+  "tiktok": { 
+    "top": "88%", 
+    "left": "48%", 
+    "width": "10%" 
+  },
+
+  "web": { 
+    "top": "88%", 
+    "left": "63%", 
+    "width": "10%" 
+  },
+
+  "email": {
+  "top": "88%",
+  "left": "80%",
+  "width": "10%"
+},
+
+
+  "volver": { 
+    "top": "95%", 
+    "left": "87%", 
+    "width": "14%" 
+  }
+}
+
+}

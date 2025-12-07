@@ -1,0 +1,12 @@
+/* vivo-volver.css — O25 */
+.o25-volver-wrapper {
+  position: absolute;
+  z-index: 2000;   /* por encima de la oferta */
+  pointer-events: auto;
+}
+
+.o25-volver-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "alfredo",
+  "nombre": "Alfredo — Técnico en Computación",
+  "flyer": "/anunciantes/alfredo/flyer.png",
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51972077437",
+      "mensaje": "Hola, vi su anuncio en el Shopper Digital y necesito sus servicios de informática."
+    },
+    "volver": {
+      "activo": true
+    },
+    "ubicacion": {
+      "activo": false
+    },
+    "video": {
+      "activo": false
+    },
+    "carrusel": {
+      "activo": false
+    },
+    "oferta": {
+      "activo": false
+    },
+    "rrss": {
+      "activo": false
+    }
+  },
+  "vivosMap": {
+    "whatsapp": {
+      "top": "92%",
+      "left": "43%",
+      "width": "14%"
+    },
+    "volver": {
+      "top": "95%",
+      "left": "87%",
+      "width": "14%"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "imprenta",
+  "nombre": "Imprenta del Shopper",
+  "flyer": "/anunciantes/imprenta/flyer.png",
+
+  "video_url": "/anunciantes/imprenta/video.mp4",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51993490886",
+      "mensaje": "Hola Imprenta del Shopper, vi su anuncio en el Shopper Digital, necesito de sus servicios gráficos. 🎨"
+    },
+    "video": {
+      "activo": true
+    },
+    "volver": {
+      "activo": true
+    },
+    "ubicacion": {
+      "activo": false
+    },
+    "carrusel": {
+      "activo": false
+    },
+    "oferta": {
+      "activo": false
+    },
+    "rrss": {
+      "activo": false
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "89%",
+      "left": "40%",
+      "width": "19%"
+    },
+    "video": {
+      "top": "82%",
+      "left": "62%",
+      "width": "28%"
+    },
+    "volver": {
+      "top": "95%",
+      "left": "87%",
+      "width": "14%"
+    }
+  }
+}

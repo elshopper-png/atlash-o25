@@ -1,0 +1,73 @@
+{
+  "slug": "conforta",
+  "nombre": "Conforta",
+
+  "flyer": "/anunciantes/conforta/flyer.png",
+
+  "gallery": [
+    "/anunciantes/conforta/1.png",
+    "/anunciantes/conforta/2.jpg",
+    "/anunciantes/conforta/3.jpg",
+    "/anunciantes/conforta/4.png",
+    "/anunciantes/conforta/5.jpg"
+  ],
+
+  "vivos": {
+    "telefono1": {
+      "numero": "015231871"
+    },
+
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Sta+Cruz+de+Pachacutec+179,+Los+Olivos+15301/@-11.9928586,-77.0652945,17z/data=!4m6!3m5!1s0x9105ce56dbca4f6b:0xb21c49f423190749!8m2!3d-11.9928848!4d-77.06464!16s%2Fg%2F11y3zm8nc7?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "oferta": {
+      "activo": true,
+      "imagen": "/anunciantes/conforta/oferta.png",
+      "animacion": "side-to-side"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "telefono1": {
+      "top": "91%",
+      "left": "65%",
+      "width": "14%"
+    },
+
+    "ubicacion": {
+      "top": "78.5%",
+      "left": "8.5%",
+      "width": "10%"
+    },
+
+    "carrusel": {
+      "top": "81.5%",
+      "left": "29%",
+      "width": "48%",
+      "transform": "translateX(-50%)"
+    },
+
+    "oferta": {
+      "top": "66%",
+      "left": "57%",
+      "width": "32%",
+      "transform": "translateX(-50%)"
+    },
+
+    "volver": {
+      "top": "93%",
+      "left": "84%",
+      "width": "16%"
+    }
+  }
+}

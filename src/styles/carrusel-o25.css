@@ -1,0 +1,77 @@
+/* Fondo oscuro del overlay */
+.o25-gallery-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+/* Botón de cerrar */
+.o25-gallery-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Imagen principal */
+.o25-gallery-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* Flechas */
+.o25-gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.o25-gallery-arrow.left {
+  left: 20px;
+}
+
+.o25-gallery-arrow.right {
+  right: 20px;
+}
+
+/* Bullets */
+.o25-gallery-bullets {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.o25-gallery-bullets .bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff55;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.o25-gallery-bullets .bullet.active {
+  background: #ffffff;
+  transform: scale(1.2);
+}

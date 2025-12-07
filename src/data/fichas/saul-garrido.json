@@ -1,0 +1,24 @@
+{
+  "slug": "saul-garrido",
+  "giroSlug": "salud-integral",
+  "nombre": "Dr. Saúl Garrido",
+  "flyer": "/anunciantes/saul/flyer.png",
+  "whatsapp": "51999286969",
+  "whatsappMessage": "Hola Dr. Garrido, vi su aviso en el Shopper Digital y deseo reservar una cita.",
+  "mapa_url": "https://www.google.com/maps/place/C.+Las+Tunas+410,+San+Mart%C3%ADn+de+Porres+15311/",
+  "gallery": [
+    "/anunciantes/saul/1.webp",
+    "/anunciantes/saul/2.webp",
+    "/anunciantes/saul/3.webp",
+    "/anunciantes/saul/4.png"
+  ],
+  "video_url": "/anunciantes/saul/video.mp4",
+  "vivos": {
+    "whatsapp": { "activo": true },
+    "ubicacion": { "activo": true },
+    "carrusel": { "activo": true },
+    "video": { "activo": true },
+    "oferta": { "activo": false },
+    "volver": { "activo": true }
+  }
+}
