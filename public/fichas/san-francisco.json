@@ -1,0 +1,57 @@
+{
+  "slug": "san-francisco",
+  "nombre": "Decoraciones San Francisco",
+  "flyer": "/anunciantes/san-francisco/flyer.png",
+
+  "whatsapp": "51998511716",
+  "whatsappMessage": "Hola Decoraciones San Francisco, vi su aviso en el Shopper Digital y deseo más información. 😊",
+
+  "mapa_url": "https://www.google.com/maps/place/DECORACIONES+SAN+FRANCISCO/@-11.9941302,-77.0761343,16z/data=!4m6!3m5!1s0x9105ce5ec2dfeb55:0xffe9fc2694250804!8m2!3d-11.9945214!4d-77.0749468!16s%2Fg%2F11fgh3d52z",
+
+  "facebook": "https://www.facebook.com/profile.php?id=100063499931756&ref=page_internal",
+  "instagram": "",
+  "tiktok": "https://www.tiktok.com/@decoracionessanfrancisco",
+  "web": "https://www.decoracionesanfrancisco.com/",
+  "email": "",
+
+  "gallery": [
+    "/anunciantes/san-francisco/1.png",
+    "/anunciantes/san-francisco/2.png",
+    "/anunciantes/san-francisco/3.png",
+    "/anunciantes/san-francisco/4.png",
+    "/anunciantes/san-francisco/5.png"
+  ],
+
+  "vivos": {
+    "ubicacion": { "activo": true },
+    "whatsapp": { "activo": true },
+    "carrusel": { "activo": true },
+    "facebook": { "activo": true },
+    "tiktok": { "activo": true },
+    "web": { "activo": true },
+    "instagram": { "activo": false },
+    "email": { "activo": false },
+    "video": { "activo": false },
+    "oferta": { "activo": false },
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "75%", "left": "9%", "width": "11%" },
+
+    "whatsapp": { "top": "82%", "left": "58%", "width": "12%" },
+
+    "carrusel": {
+      "top": "79%",
+      "left": "29%",
+      "width": "55%",
+      "transform": "translateX(-50%)"
+    },
+
+    "facebook": { "top": "89.3%", "left": "58%", "width": "12%" },
+    "tiktok":   { "top": "88.5%", "left": "80%", "width": "12%" },
+    "web":      { "top": "82%", "left": "81%", "width": "13%" },
+
+    "volver": { "top": "93.8%", "left": "83%", "width": "16%" }
+  }
+}

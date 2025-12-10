@@ -30,6 +30,7 @@ export const VIVO_REGISTRY = {
   whatsapp2: VivoWhatsapp,
 
   // 🔹 Teléfonos fijos
+  telefono: VivoTelefono,
   telefono1: VivoTelefono,
   telefono2: VivoTelefono,
 

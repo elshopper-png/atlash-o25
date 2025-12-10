@@ -1,0 +1,37 @@
+{
+  "slug": "clinica-del-norte",
+  "nombre": "Clínica del Norte",
+
+  "flyer": "/anunciantes/clinica-del-norte/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51975594501",
+      "mensaje": "Hola Clínica del Norte, vi su anuncio en el Shopper Digital y deseo más información. 😊"
+    },
+
+    "telefono1": {
+      "activo": true,
+      "numero": "015220338"
+    },
+
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+Universitaria+3890,+Los+Olivos+15301/@-11.9894301,-77.0817707,17z/"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": { "top": "94%", "left": "34%", "width": "11%" },
+    "telefono1": { "top": "94%", "left": "55%", "width": "11%" },
+    "ubicacion": { "top": "90%", "left": "87%", "width": "10%" },
+    "volver": { "top": "95%", "left": "87%", "width": "13%" }
+  },
+
+  "carrusel": []
+}

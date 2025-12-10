@@ -27,6 +27,12 @@ export default function VivoWhatsapp({ data, style, vivoKey = "whatsapp" }) {
     mensaje || ""
   )}`;
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    // 🔒 Apertura blindada fuera del contexto de la SPA/PWA
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div
       className="o25-vivo o25-latido"
@@ -37,7 +43,7 @@ export default function VivoWhatsapp({ data, style, vivoKey = "whatsapp" }) {
         ...style,
       }}
     >
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <a href={url} onClick={handleClick}>
         <img
           src="/icons/whatsapp.png"
           alt="WhatsApp"

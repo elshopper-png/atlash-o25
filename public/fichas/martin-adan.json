@@ -1,0 +1,65 @@
+{
+  "slug": "martin-adan",
+  "nombre": "Colegio Martín Adán",
+  "flyer": "/anunciantes/martin-adan/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51924215140",
+      "mensaje": "Hola Colegio Martín Adán, vi su anuncio en el Shopper Digital y deseo más información. 📚"
+    },
+    "telefono": {
+      "activo": true,
+      "numero": "015237183"
+    },
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+Las+Palmeras+3974,+Lima+15301/@-11.9880001,-77.0725203,17z/data=!4m6!3m5!1s0x9105ce5b3e12af85:0x96ef6efd1a354446!8m2!3d-11.9880578!4d-77.0719517!16s%2Fg%2F11c2b9f5y6"
+    },
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/ColegioMartinAdan1?locale=es_LA"
+    },
+    "web": {
+      "activo": true,
+      "url": "https://www.martinadan.edu.pe/"
+    },
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "94%",
+      "left": "9%",
+      "width": "11%"
+    },
+    "ubicacion": {
+      "top": "89%",
+      "left": "11%",
+      "width": "9%"
+    },
+    "telefono": {
+      "top": "94%",
+      "left": "28%",
+      "width": "11%"
+    },
+    "facebook": {
+      "top": "94%",
+      "left": "50%",
+      "width": "11%"
+    },
+    "web": {
+      "top": "94%",
+      "left": "66%",
+      "width": "12%"
+    },
+    "volver": {
+      "top": "94%",
+      "left": "87%",
+      "width": "13%"
+    }
+  }
+}

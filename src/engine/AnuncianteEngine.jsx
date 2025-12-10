@@ -11,38 +11,39 @@ import "../styles/latidos.css";
 
 import CarruselO25 from "./components/CarruselO25.jsx";
 
-// 📦 Carga universal de fichas O25
-const fichas = import.meta.glob("../data/fichas/*.json", {
-  eager: true,
-  import: "default",
-});
+
 
 export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   const [data, setData] = useState(null);
   const [showGallery, setShowGallery] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
-  // 🧭 Cargar ficha según slug
-  useEffect(() => {
+  // 🧭 Cargar ficha desde /public/fichas
+useEffect(() => {
+  const loadFicha = async () => {
     try {
-      const path = `../data/fichas/${slug}.json`;
-      const ficha = fichas[path];
+      const url = `/fichas/${slug}.json`;
+      console.log("Cargando ficha desde:", url);
 
-      console.log("📁 FICHAS DETECTADAS =", Object.keys(fichas));
-      console.log("📄 Intentando cargar ficha:", slug, "→", path, ficha);
+      const res = await fetch(url);
 
-      if (!ficha) {
-        console.error("❌ No se encontró la ficha:", slug);
+      if (!res.ok) {
+        console.error("❌ No existe la ficha:", url);
         setData(null);
         return;
       }
 
-      setData(ficha);
+      const json = await res.json();
+      setData(json);
     } catch (err) {
       console.error("❌ Error cargando ficha:", slug, err);
       setData(null);
     }
-  }, [slug]);
+  };
+
+  loadFicha();
+}, [slug]);
+
 
   // ⏳ Mientras no hay data
   if (!data) {

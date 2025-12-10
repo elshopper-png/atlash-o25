@@ -31,21 +31,29 @@
 
   "vivos": {
     "ubicacion": { "activo": true },
-    "whatsapp": { "activo": true },
+
+    "whatsapp": { 
+      "activo": true,
+      "numero": "51991405449",
+      "mensaje": "Hola doctora, vi su anuncio en el Shopper Digital y deseo más información. 😊"
+    },
+
     "carrusel": { "activo": true },
-    "video": { "activo": false},
+    "video": { "activo": false },
+
     "facebook": { "activo": false },
     "instagram": { "activo": false },
     "tiktok": { "activo": false },
     "web": { "activo": false },
     "email": { "activo": false },
+
     "oferta": { "activo": true, "animacion": "side-to-side" },
     "volver": { "activo": true }
   },
 
   "vivosMap": {
     "ubicacion": { "top": "68%", "left": "11%", "width": "12%" },
-    "whatsapp": { "top": "75%", "left": "60%", "width": "11%" },
+    "whatsapp": { "top": "75%", "left": "46%", "width": "11%" },
 
     "carrusel": {
       "top": "78%",

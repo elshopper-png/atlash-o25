@@ -1,0 +1,57 @@
+{
+  "slug": "good-service",
+  "nombre": "Good Service — Agencia de Empleos",
+  "flyer": "/anunciantes/good-service/flyer.png",
+
+  "whatsapp": "51995545197",
+  "whatsappMessage": "Hola Agencia de Empleos, vi su anuncio en el Shopper Digital y deseo más información. 😊",
+
+  "mapa_url": "https://www.google.com/maps/place/Jr.+C.+A.+Salaverry+3855,+Lima+15301/@-11.9887034,-77.0661789,17z/data=!4m6!3m5!1s0x9105ce5056b66b0d:0x8644e3cce3c49689!8m2!3d-11.9889186!4d-77.0655244!16s%2Fg%2F11s7x2gf4c",
+
+  "telefono": "014867874",
+
+  "vivos": {
+    "ubicacion": { "activo": true },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51995545197",
+      "mensaje": "Hola Agencia de Empleos, vi su anuncio en el Shopper Digital y deseo más información. 😊"
+    },
+
+    "telefono1": {
+      "activo": true,
+      "numero": "014867874"
+    },
+
+    "carrusel": { "activo": false },
+    "video": { "activo": false },
+    "facebook": { "activo": false },
+    "instagram": { "activo": false },
+    "tiktok": { "activo": false },
+    "web": { "activo": false },
+    "email": { "activo": false },
+    "oferta": { "activo": false },
+
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "87%", "left": "6%", "width": "12%" },
+
+    "whatsapp": { "top": "93.2%", "left": "58%", "width": "11%" },
+
+    "telefono1": { "top": "93.2%", "left": "36%", "width": "11%" },
+
+    "carrusel": null,
+    "video": null,
+    "facebook": null,
+    "instagram": null,
+    "tiktok": null,
+    "web": null,
+    "email": null,
+    "oferta": null,
+
+    "volver": { "top": "94%", "left": "84%", "width": "14%" }
+  }
+}

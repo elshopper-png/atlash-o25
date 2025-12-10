@@ -1,0 +1,47 @@
+{
+  "slug": "sandoval",
+  "nombre": "Sandoval — Servicios Inmobiliarios",
+  "flyer": "/anunciantes/sandoval/flyer.png",
+
+  "whatsapp": "51995760074",
+  "whatsappMessage": "Hola señor Sandoval, vi su anuncio en el Shopper Digital y necesito de sus servicios inmobiliarios. 😊",
+
+  "mapa_url": "",
+  "facebook": "",
+  "instagram": "",
+  "tiktok": "",
+  "web": "",
+  "email": "",
+  "telefono": "",
+
+  "video_url": "",
+  "gallery": [],
+  "oferta": { "activo": false },
+
+  "vivos": {
+    "ubicacion": { "activo": false },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51995760074",
+      "mensaje": "Hola señor Sandoval, vi su anuncio en el Shopper Digital y necesito de sus servicios inmobiliarios. 😊"
+    },
+
+    "telefono1": { "activo": false },
+    "carrusel": { "activo": false },
+    "video": { "activo": false },
+    "facebook": { "activo": false },
+    "instagram": { "activo": false },
+    "tiktok": { "activo": false },
+    "web": { "activo": false },
+    "email": { "activo": false },
+    "oferta": { "activo": false },
+
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "whatsapp": { "top": "90%", "left": "63%", "width": "17%" },
+    "volver":   { "top": "94%", "left": "85%", "width": "14%" }
+  }
+}

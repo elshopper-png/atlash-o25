@@ -1,0 +1,61 @@
+{
+  "slug": "clave4",
+  "nombre": "Clave 4 — Servicio de Transporte",
+  "flyer": "/anunciantes/clave4/flyer.png",
+
+  "telefono": "015712236",
+
+  "whatsapp": "51998910173",
+  "whatsappMessage": "Hola Clave 4, vi su anuncio en el Shopper Digital y deseo más información. 😊",
+
+  "email": "eusebioaparicio10@gmail.com",
+
+  "mapa_url": "",
+
+  "gallery": [
+    "/anunciantes/clave4/1.jpg",
+    "/anunciantes/clave4/2.jpg",
+    "/anunciantes/clave4/3.jpg",
+    "/anunciantes/clave4/4.jpg",
+    "/anunciantes/clave4/5.jpg"
+  ],
+
+  "vivos": {
+    "ubicacion": { "activo": false },
+
+    "telefono": { 
+      "activo": true,
+      "numero": "015712236"
+    },
+
+    "whatsapp": { "activo": true },
+    "email": { "activo": true },
+
+    "carrusel": { "activo": true },
+    "video": { "activo": false },
+
+    "facebook": { "activo": false },
+    "instagram": { "activo": false },
+    "tiktok": { "activo": false },
+    "web": { "activo": false },
+
+    "oferta": { "activo": false },
+
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "telefono": { "top": "82%", "left": "58%", "width": "15%" },
+    "whatsapp": { "top": "82%", "left": "80%", "width": "16%" },
+    "email": { "top": "91%", "left": "62%", "width": "14%" },
+
+    "carrusel": {
+      "top": "80%",
+      "left": "29%",
+      "width": "52%",
+      "transform": "translateX(-50%)"
+    },
+
+    "volver": { "top": "93.5%", "left": "82%", "width": "16%" }
+  }
+}
