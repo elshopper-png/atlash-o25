@@ -1,0 +1,80 @@
+{
+  "slug": "kinderking",
+  "nombre": "Kinderking College",
+
+  "flyer": "/anunciantes/kinderking/flyer.png",
+
+  "video_url": "/anunciantes/kinderking/video.mp4",
+
+  "gallery": [
+    "/anunciantes/kinderking/1.jpg",
+    "/anunciantes/kinderking/2.jpg",
+    "/anunciantes/kinderking/3.jpg",
+    "/anunciantes/kinderking/4.jpg",
+    "/anunciantes/kinderking/5.jpg",
+    "/anunciantes/kinderking/6.jpg",
+    "/anunciantes/kinderking/7.jpg"
+  ],
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51962340652",
+      "mensaje": "Hola colegio Kinderking, vi su aviso en el Shopper Digital y deseo más información. 📚"
+    },
+
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av+Beta+2180,+Los+Olivos+15301/@-12.0065246,-77.0723703,17z/data=!4m6!3m5!1s0x9105cef1a99f64a5:0x942302cd5accc06e!8m2!3d-12.0064249!4d-77.0712223!16s%2Fg%2F11j4x610ff?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/Kinderking.edu.pe"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/kinderking.edu.pe/"
+    },
+
+    "tiktok": {
+      "activo": true,
+      "url": "https://www.tiktok.com/@kinderking.edu.pe"
+    },
+
+    "youtube": {
+      "activo": true,
+      "url": "https://www.youtube.com/@iepkinderking"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": { "top": "85%", "left": "84%", "width": "12%" },
+
+    "ubicacion": { "top": "85%", "left": "4%", "width": "10%" },
+
+    "video": { "top": "87.5%", "left": "68%", "width": "19%" },
+
+    "carrusel": { "top": "68%", "left": "61%", "width": "38%" },
+
+    "facebook": { "top": "92%", "left": "10%", "width": "12%" },
+    "instagram": { "top": "92%", "left": "26%", "width": "12%" },
+    "tiktok": { "top": "92%", "left": "40%", "width": "12%" },
+    "youtube": { "top": "92%", "left": "55%", "width": "12%" },
+
+    "volver": { "top": "94.3%", "left": "87%", "width": "13%" }
+  }
+}

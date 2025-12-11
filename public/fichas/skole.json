@@ -1,0 +1,63 @@
+{
+  "slug": "skole",
+  "nombre": "Colegio Skole Paidea",
+  "flyer": "/anunciantes/skole/flyer.png",
+
+  "gallery": [
+    "/anunciantes/skole/1.jpg",
+    "/anunciantes/skole/2.jpg",
+    "/anunciantes/skole/3.jpg"
+  ],
+
+  "video_url": "/anunciantes/skole/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Jr.+Aries+923,+Los+Olivos+15301/@-11.9956854,-77.0731091,17z/data=!4m6!3m5!1s0x9105cfdbbef28197:0xf53c6e34a522d819!8m2!3d-11.9959845!4d-77.0724224!16s%2Fg%2F11mq7zw2x2?entry=ttu"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51902650338",
+      "mensaje": "Hola colegio Skole Paidea, vi su anuncio en el Shopper Digital y deseo más información. 😊"
+    },
+
+    "telefono1": {
+      "activo": true,
+      "numero": "015053243"
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/profile.php?id=100063686191438"
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "carrusel": {
+      "activo": false
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "64%", "left": "65%", "width": "12%" },
+    "whatsapp": { "top": "79%", "left": "78%", "width": "12%" },
+
+    "telefono1": { "top": "79%", "left": "54%", "width": "12%" },
+
+    "facebook": { "top": "89%", "left": "48%", "width": "14%" },
+
+    "carrusel": { "top": "81%", "left": "25%", "width": "18%" },
+
+    "video": { "top": "84.3%", "left": "62%", "width": "23%" },
+
+    "volver": { "top": "93%", "left": "82%", "width": "16%" }
+  }
+}
