@@ -20,6 +20,7 @@ import VivoOferta from "./components/VivoOferta.jsx";
 import VivoVolver from "./components/VivoVolver.jsx";
 
 import VivoTelefono from "./components/VivoTelefono.jsx";
+import VivoVideo1 from "./components/VivoVideo1.jsx";
 
 export const VIVO_REGISTRY = {
   ubicacion: VivoUbicacion,
@@ -36,7 +37,8 @@ export const VIVO_REGISTRY = {
 
   carrusel: VivoCarrusel,
   video: VivoVideo,
-
+  video1: VivoVideo1,
+ 
 
   facebook: VivoFacebook,
   instagram: VivoInstagram,

@@ -1,0 +1,84 @@
+{
+  "slug": "quives",
+  "nombre": "Colegio Santa Rosa de Quives",
+  "flyer": "/anunciantes/quives/flyer.png",
+
+  "gallery": [
+    "/anunciantes/quives/1.jpg",
+    "/anunciantes/quives/2.jpg",
+    "/anunciantes/quives/3.jpg",
+    "/anunciantes/quives/4.jpg",
+    "/anunciantes/quives/5.jpg",
+    "/anunciantes/quives/6.jpg",
+    "/anunciantes/quives/7.jpg",
+    "/anunciantes/quives/8.jpg"
+  ],
+
+  "video_url": "/anunciantes/quives/video.mp4",
+  "video1_url": "/anunciantes/quives/video1.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Colegio+Santa+Rosa+de+Quives/@-11.9827047,-77.0711681,18z/data=!4m10!1m2!2m1!1ssanta+rosa+school+los+olivos!3m6!1s0x9105ce446094d3d5:0xdc0f2150df852871!8m2!3d-11.9828569!4d-77.0708945!15sChxzYW50YSByb3NhIHNjaG9vbCBsb3Mgb2xpdm9zkgEScHJlcGFyYXRvcnlfc2Nob29s4AEA!16s%2Fg%2F11dylrdqfd?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51922689937",
+      "mensaje": "Hola colegio Santa Rosa de Quives, vi su anuncio en el Shopper Digital y deseo más informes, gracias. 🎒📚"
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/colegiosantarosadequives"
+    },
+
+    "web": {
+      "activo": true,
+      "url": "https://www.colegiosacademiasrq.edu.pe/"
+    },
+
+    "email": {
+      "activo": true,
+      "correo": "informes@colegiosacademiasrq.edu.pe"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "video1": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "86%", "left": "88%", "width": "10%" },
+    "whatsapp":  { "top": "93%", "left": "12%", "width": "11%" },
+
+    "facebook":  { "top": "93%", "left": "28%", "width": "11%" },
+    "web":       { "top": "93%", "left": "44%", "width": "11%" },
+    "email":     { "top": "93%", "left": "60%", "width": "11%" },
+
+    "carrusel":  {
+      "top": "61.8%",
+      "left": "68%",
+      "width": "46%",
+      "transform": "translateX(-50%)"
+    },
+
+    "video":   { "top": "78.8%", "left": "9%", "width": "21%" },
+    "video1":  { "top": "78.8%", "left": "27%", "width": "21%" },
+
+    "volver":  { "top": "92.5%", "left": "82%", "width": "16%" }
+  }
+}

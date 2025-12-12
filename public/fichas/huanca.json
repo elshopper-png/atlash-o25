@@ -1,0 +1,33 @@
+{
+  "slug": "huanca",
+  "nombre": "Técnico Electricista Huanca",
+  "flyer": "/anunciantes/huanca/flyer.png",
+
+  "gallery": [],
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51937501645",
+      "mensaje": "Hola técnico electricista, vi su anuncio en el Shopper Digital y requiero de sus servicios. ⚡"
+    },
+
+    "ubicacion": { "activo": false },
+    "telefono": { "activo": false },
+    "carrusel": { "activo": false },
+    "video": { "activo": false },
+    "video1": { "activo": false },
+    "facebook": { "activo": false },
+    "instagram": { "activo": false },
+    "email": { "activo": false },
+    "tiktok": { "activo": false },
+    "web": { "activo": false },
+
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "whatsapp": { "top": "77%", "left": "70%", "width": "15%" },
+    "volver":   { "top": "95%", "left": "86%", "width": "13%" }
+  }
+}

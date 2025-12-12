@@ -1,0 +1,77 @@
+{
+  "slug": "apupal",
+  "nombre": "APUPAL",
+  "flyer": "/anunciantes/apupal/flyer.png",
+
+  "gallery": [
+    "/anunciantes/apupal/1.jpg",
+    "/anunciantes/apupal/2.jpg",
+    "/anunciantes/apupal/3.jpg",
+    "/anunciantes/apupal/4.jpg",
+    "/anunciantes/apupal/5.jpg",
+    "/anunciantes/apupal/6.jpg"
+  ],
+
+  "video_url": "/anunciantes/apupal/video.mp4",
+  "video1_url": "/anunciantes/apupal/video1.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+Las+Palmeras+3943,+Lima+15301/@-11.9884773,-77.0729985,17z/data=!4m6!3m5!1s0x9105ce5b1334e677:0x3f168a39f02f3a74!8m2!3d-11.9886085!4d-77.0722689!16s%2Fg%2F11pw1sqbmm"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51949918460",
+      "mensaje": "Hola APUPAL, vi su anuncio en el Shopper Digital y necesito información de sus cursos y talleres deportivos. ⚽🏀"
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/apupalpalmeras"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/apupal_oficial"
+    },
+
+    "email": {
+      "activo": true,
+      "correo": "asistenciadeportivaapupal@gmail.com"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "video1": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion":  { "top": "87%",  "left": "3%", "width": "11%" },
+    "whatsapp":   { "top": "93%",  "left": "10%", "width": "11%" },
+
+    "facebook":   { "top": "93%",  "left": "26%", "width": "11%" },
+    "instagram":  { "top": "93%",  "left": "43%", "width": "11%" },
+    "email":      { "top": "93%",  "left": "61%", "width": "11%" },
+
+    "carrusel":   { "top": "22%",  "left": "77%", "width": "46%", "transform": "translateX(-50%)" },
+
+    "video":      { "top": "70%", "left": "0.1", "width": "19%" },
+    "video1":     { "top": "70%", "left": "13%", "width": "19%" },
+
+    "volver":     { "top": "92.5%", "left": "82%", "width": "16%" }
+  }
+}
