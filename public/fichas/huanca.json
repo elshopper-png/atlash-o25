@@ -27,7 +27,7 @@
   },
 
   "vivosMap": {
-    "whatsapp": { "top": "77%", "left": "70%", "width": "15%" },
+    "whatsapp": { "top": "84%", "left": "70%", "width": "15%" },
     "volver":   { "top": "95%", "left": "86%", "width": "13%" }
   }
 }

@@ -13,7 +13,8 @@
     "/anunciantes/kinderking/4.jpg",
     "/anunciantes/kinderking/5.jpg",
     "/anunciantes/kinderking/6.jpg",
-    "/anunciantes/kinderking/7.jpg"
+    "/anunciantes/kinderking/7.jpg",
+    "/anunciantes/kinderking/8.jpg"
   ],
 
   "vivos": {
@@ -62,18 +63,18 @@
   },
 
   "vivosMap": {
-    "whatsapp": { "top": "85%", "left": "84%", "width": "12%" },
+    "whatsapp": { "top": "84%", "left": "84%", "width": "12%" },
 
-    "ubicacion": { "top": "85%", "left": "4%", "width": "10%" },
+    "ubicacion": { "top": "84%", "left": "3%", "width": "10%" },
 
-    "video": { "top": "87.5%", "left": "68%", "width": "19%" },
+    "video": { "top": "87%", "left": "67%", "width": "19%" },
 
-    "carrusel": { "top": "68%", "left": "61%", "width": "38%" },
+    "carrusel": { "top": "68.5%", "left": "57.5%", "width": "41%" },
 
-    "facebook": { "top": "92%", "left": "10%", "width": "12%" },
-    "instagram": { "top": "92%", "left": "26%", "width": "12%" },
-    "tiktok": { "top": "92%", "left": "40%", "width": "12%" },
-    "youtube": { "top": "92%", "left": "55%", "width": "12%" },
+    "facebook": { "top": "91%", "left": "6%", "width": "12%" },
+    "instagram": { "top": "91%", "left": "23%", "width": "12%" },
+    "tiktok": { "top": "91%", "left": "38%", "width": "12%" },
+    "youtube": { "top": "91%", "left": "53%", "width": "12%" },
 
     "volver": { "top": "94.3%", "left": "87%", "width": "13%" }
   }

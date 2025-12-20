@@ -10,23 +10,17 @@
   "vivos": {
     "ubicacion": {
       "activo": true,
-      "link": "https://www.google.com/maps/place/Agatas+1376,+Lima+15006/@-11.9895596,-77.0790234,17z/data=!4m6!3m5!1s0x9105ce5d78cee745:0xf41d66e4631d82e3!8m2!3d-11.9897538!4d-77.079077!16s%2Fg%2F11fr66yjb1?entry=ttu"
+      "url": "https://www.google.com/maps/place/Agatas+1376,+Lima+15006/@-11.9895596,-77.0790234,17z/data=!4m6!3m5!1s0x9105ce5d78cee745:0xf41d66e4631d82e3!8m2!3d-11.9897538!4d-77.079077!16s%2Fg%2F11fr66yjb1?entry=ttu"
     },
 
-    "video": {
-      "activo": true
-    },
-
-    "whatsapp1": {
+    "whatsapp": {
       "activo": true,
       "numero": "51993982439",
       "mensaje": "Hola técnico Caipo, vi su anuncio en el Shopper Digital. Necesito ayuda con un electrodoméstico. ¿Podemos coordinar? 😊"
     },
 
-    "whatsapp2": {
-      "activo": true,
-      "numero": "51963037342",
-      "mensaje": "Hola técnico Caipo, vi su anuncio en el Shopper Digital. Necesito ayuda con un electrodoméstico. ¿Podemos coordinar? 😊"
+    "video": {
+      "activo": true
     },
 
     "volver": {
@@ -35,10 +29,9 @@
   },
 
   "vivosMap": {
-    "ubicacion": { "top": "68%", "left": "15%", "width": "13%" },
-    "whatsapp1": { "top": "93.5%", "left": "40%", "width": "12%" },
-    "whatsapp2": { "top": "93.5%", "left": "55%", "width": "12%" },
-    "video": { "top": "88.7%", "left": "68%", "width": "18%" },
+    "ubicacion": { "top": "88%", "left": "5%", "width": "13%" },
+    "whatsapp": { "top": "93.5%", "left": "38%", "width": "14%" },
+    "video": { "top": "88.7%", "left": "65%", "width": "18%" },
     "volver": { "top": "94%", "left": "84%", "width": "16%" }
   }
 }
