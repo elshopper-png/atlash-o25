@@ -8,8 +8,6 @@
   "whatsapp": "51998910173",
   "whatsappMessage": "Hola Clave 4, vi su anuncio en el Shopper Digital y deseo más información. 😊",
 
-  "email": "eusebioaparicio10@gmail.com",
-
   "mapa_url": "",
 
   "gallery": [
@@ -23,13 +21,19 @@
   "vivos": {
     "ubicacion": { "activo": false },
 
-    "telefono": { 
+    "telefono": {
       "activo": true,
       "numero": "015712236"
     },
 
     "whatsapp": { "activo": true },
-    "email": { "activo": true },
+
+    "email": {
+      "activo": true,
+      "email": "eusebioaparicio10@gmail.com",
+      "asunto": "Consulta desde El Shopper Digital",
+      "mensaje": "Hola Clave 4, vi su anuncio en el Shopper Digital y deseo más información."
+    },
 
     "carrusel": { "activo": true },
     "video": { "activo": false },

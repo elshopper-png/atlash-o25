@@ -7,20 +7,22 @@ export default function VivoEmail({ data, style }) {
   const emailCfg = data?.vivos?.email;
   const whatsappMsg = data?.vivos?.whatsapp?.mensaje || "";
 
-  if (!style || !emailCfg?.activo || !emailCfg?.correo) return null;
+  if (!style || !emailCfg?.activo || !emailCfg?.email) return null;
 
   const handleClick = () => {
-    const to = emailCfg.correo;
+    const to = emailCfg.email;
 
     const subject = encodeURIComponent(
       emailCfg.asunto || "Consulta desde El Shopper Digital"
     );
 
     const body = encodeURIComponent(
-      emailCfg.mensaje || whatsappMsg || "Hola, vi su anuncio en El Shopper Digital."
+      emailCfg.mensaje ||
+        whatsappMsg ||
+        "Hola, vi su anuncio en El Shopper Digital."
     );
 
-    window.open(`mailto:${to}?subject=${subject}&body=${body}`, "_self");
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
   };
 
   return (

@@ -8,31 +8,41 @@ export function MapaVivosO25(data) {
   const mapa = data?.vivosMap;
 
   // ============================================================
-  // 🟦 1) NUEVO MODELO — Si existe vivosMap, usarlo (Elevarq)
+  // 🟦 1) NUEVO MODELO — Si existe vivosMap, usarlo (Elevarq, Rios, etc.)
   // ============================================================
   if (mapa) {
-  const zonas = {};
+    const zonas = {};
 
-  Object.keys(mapa).forEach((key) => {
-    const vivoCfg = vivos[key];
+    Object.keys(mapa).forEach((key) => {
+      const vivoCfg = vivos[key];
 
-    // Telefónos: si existe numero → mostrar siempre
-    if (key.startsWith("telefono")) {
-      if (vivoCfg?.numero) zonas[key] = mapa[key];
-      return;
-    }
+      // 🔹 Teléfonos: si existe numero → mostrar siempre
+      if (key.startsWith("telefono")) {
+        if (vivoCfg?.numero) {
+          zonas[key] = mapa[key];
+        }
+        return;
+      }
 
-    // Otros vivos con "activo"
-    console.log("🔍 CHECK VIVO:", key, "→", vivos[key]);
+      // 🔹 EMAIL — tratamiento explícito O25
+      if (key === "email") {
+        if (vivoCfg?.activo && vivoCfg?.email) {
+          zonas[key] = mapa[key];
+        }
+        return;
+      }
 
-    if (vivoCfg?.activo) zonas[key] = mapa[key];
-  });
+      // 🔹 Regla general para otros vivos
+      if (vivoCfg?.activo) {
+        zonas[key] = mapa[key];
+      }
+    });
 
-  return zonas;
+    return zonas;
   }
 
   // ============================================================
-  // 🟥 2) MODELO ANTIGUO — Saúl (NO TOCAR)
+  // 🟥 2) MODELO ANTIGUO — Saúl Garrido (NO TOCAR)
   // ============================================================
   if (slug === "saul-garrido") {
     return {
@@ -49,7 +59,7 @@ export function MapaVivosO25(data) {
             top: "67%",
             left: "26%",
             width: "49%",
-            transform: "translateX(-50%)"
+            transform: "translateX(-50%)",
           }
         : null,
 
@@ -58,7 +68,7 @@ export function MapaVivosO25(data) {
             top: "67%",
             left: "60%",
             width: "26%",
-            transform: "translateX(-50%)"
+            transform: "translateX(-50%)",
           }
         : null,
 
@@ -66,7 +76,7 @@ export function MapaVivosO25(data) {
         ? { top: "79%", left: "60%", width: "20%" }
         : null,
 
-      volver: { top: "92.5%", left: "82%", width: "16%" }
+      volver: { top: "92.5%", left: "82%", width: "16%" },
     };
   }
 
@@ -88,7 +98,7 @@ export function MapaVivosO25(data) {
             top: "78%",
             left: "32%",
             width: "60%",
-            transform: "translateX(-50%)"
+            transform: "translateX(-50%)",
           }
         : null,
 
@@ -97,7 +107,7 @@ export function MapaVivosO25(data) {
             top: "66.3%",
             left: "59%",
             width: "28%",
-            transform: "translateX(-50%)"
+            transform: "translateX(-50%)",
           }
         : null,
 
@@ -105,7 +115,7 @@ export function MapaVivosO25(data) {
         ? { top: "77%", left: "61%", width: "41%" }
         : null,
 
-      volver: { top: "93.5%", left: "82%", width: "16%" }
+      volver: { top: "93.5%", left: "82%", width: "16%" },
     };
   }
 
@@ -126,7 +136,7 @@ export function MapaVivosO25(data) {
           top: "30%",
           left: "12%",
           width: "60%",
-          transform: "translateX(-50%)"
+          transform: "translateX(-50%)",
         }
       : null,
 
@@ -135,7 +145,7 @@ export function MapaVivosO25(data) {
           top: "66.3%",
           left: "59%",
           width: "28%",
-          transform: "translateX(-50%)"
+          transform: "translateX(-50%)",
         }
       : null,
 
@@ -143,6 +153,6 @@ export function MapaVivosO25(data) {
       ? { top: "77%", left: "60%", width: "40%" }
       : null,
 
-    volver: { top: "82.5%", left: "82%", width: "16%" }
+    volver: { top: "82.5%", left: "82%", width: "16%" },
   };
 }
