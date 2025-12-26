@@ -1,0 +1,65 @@
+{
+  "slug": "edutec",
+  "nombre": "Edutec Kids",
+  "flyer": "/anunciantes/edutec/flyer.png",
+
+  "gallery": [
+    "/anunciantes/edutec/1.jpg",
+    "/anunciantes/edutec/2.jpg",
+    "/anunciantes/edutec/3.jpg",
+    "/anunciantes/edutec/4.jpg",
+    "/anunciantes/edutec/5.jpg",
+    "/anunciantes/edutec/6.jpg",
+    "/anunciantes/edutec/7.jpg"
+  ],
+
+  "video_url": "/anunciantes/edutec/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Jir%C3%B3n+Pomabamba+1212,+Lima+15301/@-11.9944972,-77.0780556,19z/data=!4m6!3m5!1s0x9105ce5e5b4de299:0x3ad587259dcfdd37!8m2!3d-11.9944635!4d-77.0777374!16s%2Fg%2F11f4pb2l9f"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51972523264",
+      "mensaje": "Hola Edutec Kids 👶📚, vi su anuncio en el Shopper Digital y necesito más información."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/eduteckids.pe/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "78%", "left": "2%", "width": "12%" },
+    "whatsapp": { "top": "78%", "left": "84%", "width": "12%" },
+
+    "facebook": { "top": "90%", "left": "51%", "width": "12%" },
+
+    "carrusel": {
+      "top": "83%",
+      "left": "26%",
+      "width": "46%",
+      "transform": "translateX(-50%)"
+    },
+
+    "video": { "top": "83%", "left": "62%", "width": "25%" },
+
+    "volver": { "top": "94%", "left": "86%", "width": "14%" }
+  }
+}
