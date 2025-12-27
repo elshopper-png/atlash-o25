@@ -1,0 +1,49 @@
+{
+  "slug": "esoterico",
+  "nombre": "Rinconcito Esotérico",
+  "flyer": "/anunciantes/esoterico/flyer.png",
+
+  "telefono": "51993912631",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+La+Paz+2308,+San+Miguel+15087/@-12.0799682,-77.1046332,17z/data=!4m6!3m5!1s0x9105cbd7cb0db0c5:0x53388dca88ce22c3!8m2!3d-12.0803957!4d-77.1036703!16s%2Fg%2F11vqmv4__0"
+    },
+
+    "telefono": {
+      "activo": true,
+      "numero": "51993912631"
+    },
+
+    "web": {
+      "activo": true,
+      "url": "https://www.rinconcitoesoterico.com/"
+    },
+
+    "oferta": {
+      "activo": true,
+      "imagen": "/anunciantes/esoterico/oferta.png",
+      "animacion": "side-to-side"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "82%", "left": "3%", "width": "14%" },
+    "telefono":  { "top": "91%", "left": "35%", "width": "14%" },
+    "web":       { "top": "91%", "left": "60%", "width": "15%" },
+
+    "oferta": {
+      "top": "57%",
+      "left": "0.3%",
+      "width": "56%",
+      "transform": "translateX(-50%)"
+    },
+
+    "volver": { "top": "93.5%", "left": "82%", "width": "16%" }
+  }
+}
