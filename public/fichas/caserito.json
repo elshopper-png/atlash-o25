@@ -13,7 +13,7 @@
 
   "vivos": {
     "telefono1": { "activo": true, "numero": "015337134" },
-    "telefono2": { "activo": true, "numero": "013876443" },
+    "telefono2": { "activo": true, "numero": "015232105" },
 
     "whatsapp1": {
       "activo": true,
@@ -22,9 +22,10 @@
     },
     "whatsapp2": {
       "activo": true,
-      "numero": "51979549609",
+      "numero": "51948966146",
       "mensaje": "Hola Caserito Regalón, quiero hacer un pedido de gas. 😊"
     },
+  
 
     "oferta": {
       "activo": true,
@@ -40,15 +41,17 @@
   },
 
   "vivosMap": {
-    "telefono1": { "top": "88%", "left": "37%", "width": "12%" },
-    "telefono2": { "top": "88%", "left": "53%", "width": "12%" },
+    "telefono1": { "top": "80%", "left": "17%", "width": "12%" },
+    "telefono2": { "top": "80%", "left": "43%", "width": "12%" },
+    
 
-    "whatsapp1": { "top": "88%", "left": "70%", "width": "12%" },
-    "whatsapp2": { "top": "88%", "left": "86%", "width": "12%" },
+    "whatsapp1": { "top": "88%", "left": "55%", "width": "12%" },
+    "whatsapp2": { "top": "88%", "left": "76%", "width": "12%" },
+    
 
     "oferta": {
-      "top": "40%",
-      "left": "25%",
+      "top": "42%",
+      "left": "2%",
       "width": "50%",
       "transform": "translateX(-50%)"
     },
