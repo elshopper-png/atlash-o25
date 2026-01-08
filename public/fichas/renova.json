@@ -1,0 +1,36 @@
+{
+  "slug": "renova",
+  "nombre": "Renova",
+  "flyer": "/anunciantes/renova/flyer.png",
+
+  "whatsapp": "51993490886",
+  "whatsappMessage": "Hola, vi su anuncio en el Shopper Digital y quiero hacer un pedido. 😊",
+
+  "facebook": "https://www.facebook.com/share/p/1DweG2hjCG/",
+  "instagram": "https://www.instagram.com/renovaconjuan/",
+  "web": "https://futureworldproducts.com/productos/#Renova",
+
+  "video_url": "/anunciantes/renova/video.mp4",
+
+  "vivos": {
+    "whatsapp": { "activo": true },
+    "video": { "activo": true },
+    "facebook": { "activo": true },
+    "instagram": { "activo": true },
+    "web": { "activo": true },
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "whatsapp": { "top": "84%", "left": "82%", "width": "14%" },
+
+    "video": { "top": "88.5%", "left": "68%", "width": "17%" },
+
+    "facebook": { "top": "91%", "left": "18%", "width": "14%" },
+    "instagram": { "top": "91%", "left": "35%", "width": "14%" },
+
+    "web": { "top": "91%", "left": "52%", "width": "15%" },
+
+    "volver": { "top": "94%", "left": "86%", "width": "14%" }
+  }
+}
