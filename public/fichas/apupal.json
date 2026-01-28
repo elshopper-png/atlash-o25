@@ -61,10 +61,10 @@
 
   "vivosMap": {
     "ubicacion":  { "top": "87%",  "left": "3%", "width": "11%" },
-    "whatsapp":   { "top": "93%",  "left": "10%", "width": "11%" },
+    "whatsapp":   { "top": "92%",  "left": "30%", "width": "11%" },
 
-    "facebook":   { "top": "93%",  "left": "26%", "width": "11%" },
-    "instagram":  { "top": "93%",  "left": "43%", "width": "11%" },
+    "facebook":   { "top": "92%",  "left": "46%", "width": "11%" },
+    "instagram":  { "top": "92%",  "left": "63%", "width": "11%" },
     "email":      { "top": "93%",  "left": "61%", "width": "11%" },
 
     "carrusel":   { "top": "22%",  "left": "77%", "width": "46%", "transform": "translateX(-50%)" },

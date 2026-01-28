@@ -13,10 +13,14 @@
       "url": "https://www.google.com/maps/place/Agatas+1376,+Lima+15006/@-11.9895596,-77.0790234,17z/data=!4m6!3m5!1s0x9105ce5d78cee745:0xf41d66e4631d82e3!8m2!3d-11.9897538!4d-77.079077!16s%2Fg%2F11fr66yjb1?entry=ttu"
     },
 
-    "whatsapp": {
+    "telefono1": {
       "activo": true,
-      "numero": "51993982439",
-      "mensaje": "Hola técnico Caipo, vi su anuncio en el Shopper Digital. Necesito ayuda con un electrodoméstico. ¿Podemos coordinar? 😊"
+      "numero": "993982439"
+    },
+
+    "telefono2": {
+      "activo": true,
+      "numero": "963037342"
     },
 
     "video": {
@@ -29,9 +33,10 @@
   },
 
   "vivosMap": {
-    "ubicacion": { "top": "88%", "left": "5%", "width": "13%" },
-    "whatsapp": { "top": "93.5%", "left": "38%", "width": "14%" },
-    "video": { "top": "88.7%", "left": "65%", "width": "18%" },
+    "ubicacion": { "top": "81%", "left": "4%", "width": "13%" },
+    "telefono1": { "top": "90%", "left": "27%", "width": "14%" },
+    "telefono2": { "top": "90%", "left": "49%", "width": "14%" },
+    "video": { "top": "85%", "left": "65%", "width": "22%" },
     "volver": { "top": "94%", "left": "84%", "width": "16%" }
   }
 }
