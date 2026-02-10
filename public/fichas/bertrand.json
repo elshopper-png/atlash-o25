@@ -1,0 +1,56 @@
+{
+  "slug": "bertrand",
+  "nombre": "Colegio Bertrand Russell",
+
+  "flyer": "/anunciantes/bertrand/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51985695988",
+      "mensaje": "Hola Colegio Bertrand Russell, vi su anuncio en el Shopper Digital y necesito me brinden más información, gracias. 📚"
+    },
+
+    "telefono": {
+      "activo": true,
+      "numero": "944444743"
+    },
+
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+Santiago+Antunez+de+Mayolo+808,+Lima+15301/@-11.9919703,-77.0728003"
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/inicialrusselito"
+    },
+
+    "web": {
+      "activo": true,
+      "url": "https://russelitoedupe.wixsite.com/littlegarden"
+    },
+
+    "youtube": {
+      "activo": true,
+      "url": "https://www.youtube.com/@ieiprusselito4385"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp":  { "top": "81%", "left": "27%", "width": "12%" },
+    "telefono":  { "top": "81%", "left": "5%",  "width": "12%" },
+
+    "ubicacion": { "top": "72.5%", "left": "2%", "width": "12%" },
+
+    "facebook":  { "top": "88%", "left": "6%",  "width": "13%" },
+    "web":       { "top": "94%", "left": "16%",  "width": "13%" },
+    "youtube":   { "top": "88%", "left": "27%",  "width": "13%" },
+
+    "volver":    { "top": "94.5%",  "left": "87.5%", "width": "13%" }
+  }
+}
