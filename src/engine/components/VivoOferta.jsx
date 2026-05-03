@@ -27,18 +27,19 @@ export default function VivoOferta({ data, style }) {
   }
 
   return (
-    <div
-      className={`o25-oferta-wrapper ${animClass}`}
-      style={{
-        position: "absolute",
-        zIndex: 20,
-        pointerEvents: "auto",
-        ...style,
-      }}
-      onClick={() => {
-        if (ofertaLink) window.open(ofertaLink, "_blank");
-      }}
-    >
+  <div
+    className="o25-oferta-wrapper"
+    style={{
+      position: "absolute",
+      zIndex: 20,
+      pointerEvents: "auto",
+      ...style,
+    }}
+    onClick={() => {
+      if (ofertaLink) window.open(ofertaLink, "_blank");
+    }}
+  >
+    <div className={animClass} style={{ width: "100%" }}>
       <img
         src={ofertaImg}
         alt="oferta"
@@ -46,5 +47,6 @@ export default function VivoOferta({ data, style }) {
         draggable={false}
       />
     </div>
-  );
+  </div>
+);
 }
