@@ -1,0 +1,41 @@
+{
+  "slug": "independiza",
+  "nombre": "Independiza",
+  "rubro": "Inmobiliarias",
+  "flyer": "/anunciantes/independiza/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51932525664",
+      "mensaje": "Hola, vi su anuncio en el Shopper Digital y necesito más información de sus servicios, gracias."
+    },
+
+    "email": {
+      "activo": true,
+      "email": "independiza3@gmail.com"
+    },
+
+    "web": {
+      "activo": true,
+      "url": "https://www.independiza.com"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/independiza.peru?igsh=aXlucnoxNncwNXRi"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": { "top": "77%", "left": "68%", "width": "19%" },
+    "email": { "top": "89%", "left": "14%", "width": "15%" },
+    "web": { "top": "89%", "left": "38%", "width": "17%" },
+    "instagram": { "top": "89%", "left": "63%", "width": "15%" },
+    "volver": { "top": "92.5%", "left": "82%", "width": "16%" }
+  }
+}
