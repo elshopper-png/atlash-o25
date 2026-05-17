@@ -11,13 +11,32 @@ export default function VivoYoutube({ data, style }) {
   if (!cfg?.activo) return null;
   if (!cfg.url) return null;
 
-  const icon = "/icons/youtube.png"; // asegurarse que el icono existe en /public/icons/
+  const icon = "/icons/youtube.png";
+
+  const guardarRetornoO25 = () => {
+    sessionStorage.setItem(
+      "O25_RETURN_STATE",
+      JSON.stringify({
+        pathname: window.location.pathname,
+        scrollY: window.scrollY,
+        timestamp: Date.now(),
+        vivo: "youtube"
+      })
+    );
+  };
+
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    guardarRetornoO25();
+
+    window.open(cfg.url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <a
       href={cfg.url}
-      target="_blank"
-      rel="noopener noreferrer"
+      onClick={handleClick}
       className="o25-vivo o25-latido youtube"
       style={style}
     >

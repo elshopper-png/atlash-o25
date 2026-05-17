@@ -4,23 +4,17 @@ import "../../styles/latidos.css";
 export default function VivoWhatsapp({ data, style, vivoKey = "whatsapp" }) {
   const vivoConfig = data?.vivos?.[vivoKey];
 
-  // Prioridad 1 — Modelo O25
   const numeroO25 = vivoConfig?.numero;
   const mensajeO25 = vivoConfig?.mensaje;
   const activoO25 = vivoConfig?.activo;
 
-  // Prioridad 2 — Modelo clásico
   const numeroOld = data?.whatsapp;
   const mensajeOld = data?.whatsappMessage;
 
-  // Elegir número disponible
   const numero = numeroO25 || numeroOld;
   const mensaje = mensajeO25 || mensajeOld;
 
-  // Si modelo O25 existe → respetar su "activo"
   if (vivoConfig && !activoO25) return null;
-
-  // Si no hay número → no mostrar
   if (!numero) return null;
 
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(
@@ -29,7 +23,17 @@ export default function VivoWhatsapp({ data, style, vivoKey = "whatsapp" }) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    // 🔒 Apertura blindada fuera del contexto de la SPA/PWA
+
+    sessionStorage.setItem(
+      "O25_RETURN_STATE",
+      JSON.stringify({
+        pathname: window.location.pathname,
+        scrollY: window.scrollY,
+        timestamp: Date.now(),
+        vivo: vivoKey
+      })
+    );
+
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
