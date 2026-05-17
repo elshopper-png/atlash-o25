@@ -11,39 +11,57 @@ import "../styles/latidos.css";
 
 import CarruselO25 from "./components/CarruselO25.jsx";
 
-
-
 export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   const [data, setData] = useState(null);
   const [showGallery, setShowGallery] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
-  // 🧭 Cargar ficha desde /public/fichas
-useEffect(() => {
-  const loadFicha = async () => {
+  // 🧭 Restaurador O25: al volver desde un vivo externo
+  useEffect(() => {
+    const raw = sessionStorage.getItem("O25_RETURN_STATE");
+    if (!raw) return;
+
     try {
-      const url = `/fichas/${slug}.json`;
-      console.log("Cargando ficha desde:", url);
+      const state = JSON.parse(raw);
 
-      const res = await fetch(url);
-
-      if (!res.ok) {
-        console.error("❌ No existe la ficha:", url);
-        setData(null);
-        return;
+      if (state?.scrollY !== undefined) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: Number(state.scrollY) || 0,
+            behavior: "instant"
+          });
+        }, 300);
       }
-
-      const json = await res.json();
-      setData(json);
     } catch (err) {
-      console.error("❌ Error cargando ficha:", slug, err);
-      setData(null);
+      console.warn("⚠️ No se pudo restaurar O25_RETURN_STATE", err);
     }
-  };
+  }, []);
 
-  loadFicha();
-}, [slug]);
+  // 🧭 Cargar ficha desde /public/fichas
+  useEffect(() => {
+    const loadFicha = async () => {
+      try {
+        const url = `/fichas/${slug}.json`;
+        console.log("Cargando ficha desde:", url);
 
+        const res = await fetch(url);
+
+        if (!res.ok) {
+          console.error("❌ No existe la ficha:", url);
+          setData(null);
+          return;
+        }
+
+        const json = await res.json();
+        setData(json);
+      } catch (err) {
+        console.error("❌ Error cargando ficha:", slug, err);
+        setData(null);
+      }
+    };
+
+    loadFicha();
+  }, [slug]);
 
   // ⏳ Mientras no hay data
   if (!data) {
@@ -54,22 +72,21 @@ useEffect(() => {
   const zonas = MapaVivosO25(data);
 
   console.log("🟦 VIVOSMAP =", data.vivosMap);
-console.log("🟦 ZONAS CALCULADAS =", zonas);
-// Fotos del carrusel: antiguo (data.gallery) + nuevo (vivos.carrusel.fotos)
+  console.log("🟦 ZONAS CALCULADAS =", zonas);
+
   const carruselFotos =
     (vivos.carrusel?.fotos && vivos.carrusel.fotos.length
       ? vivos.carrusel.fotos
       : data.gallery) || [];
 
-  // Handlers para overlays (galería y video)
   const handleGalleryOpen = () => setShowGallery(true);
   const handleVideoOpen = () => setShowVideo(true);
+
   const closeOverlays = () => {
     setShowGallery(false);
     setShowVideo(false);
   };
 
-  // Props extra para algunos vivos
   const extraPropsByKey = (key) => {
     if (key === "carrusel") return { onClick: handleGalleryOpen };
     if (key === "video") return { onClick: handleVideoOpen };
@@ -86,39 +103,36 @@ console.log("🟦 ZONAS CALCULADAS =", zonas);
           draggable={false}
         />
 
-        {/* 🔥 Render universal de vivos con vivoKey incluido */}
         {Object.entries(zonas).map(([key, style]) => {
-  if (!style) return null;
+          if (!style) return null;
 
-  const VivoComponent = VIVO_REGISTRY[key];
-  if (!VivoComponent) return null;
+          const VivoComponent = VIVO_REGISTRY[key];
+          if (!VivoComponent) return null;
 
-  const cfg = vivos[key] || {};
-  const extra = extraPropsByKey(key);
+          const cfg = vivos[key] || {};
+          const extra = extraPropsByKey(key);
 
-  return (
-    <VivoComponent
-      key={key}
-      vivoKey={key}
-      data={data}
-      config={cfg}
-      style={style}
-      {...(extra || {})}
+          return (
+            <VivoComponent
+              key={key}
+              vivoKey={key}
+              data={data}
+              config={cfg}
+              style={style}
+              {...(extra || {})}
             />
           );
         })}
       </div>
 
-      {/* Carrusel (overlay) */}
-{Array.isArray(data.gallery) && data.gallery.length > 0 && (
-  <CarruselO25
-    open={showGallery}
-    onClose={closeOverlays}
-    fotos={data.gallery}
+      {Array.isArray(carruselFotos) && carruselFotos.length > 0 && (
+        <CarruselO25
+          open={showGallery}
+          onClose={closeOverlays}
+          fotos={carruselFotos}
         />
       )}
 
-      {/* Video (overlay) */}
       {vivos.video?.activo && showVideo && (
         <VIVO_REGISTRY.video
           data={data}

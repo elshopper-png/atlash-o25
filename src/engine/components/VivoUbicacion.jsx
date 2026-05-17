@@ -23,6 +23,17 @@ export default function VivoUbicacion({ data, style }) {
   if (!url) return null;
 
   const handleClick = () => {
+    // Guardar estado actual O25 antes de salir al mapa
+    sessionStorage.setItem(
+      "O25_RETURN_STATE",
+      JSON.stringify({
+        pathname: window.location.pathname,
+        scrollY: window.scrollY,
+        timestamp: Date.now()
+      })
+    );
+
+    // Abrir ubicación sin destruir la app
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
