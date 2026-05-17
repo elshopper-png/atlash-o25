@@ -1,40 +1,23 @@
 // src/engine/components/VivoUbicacion.jsx
 import React from "react";
+import { openExternalO25 } from "../utils/openExternalO25";
 
 const iconPath = (name) => `/icons/${name}.png`;
 
 export default function VivoUbicacion({ data, style }) {
   const vivo = data?.vivos?.ubicacion;
 
-  // Modelo O25
   const activoO25 = vivo?.activo;
   const urlO25 = vivo?.url;
-
-  // Modelo antiguo (retrocompatibilidad)
   const urlOld = data?.mapa_url;
 
-  // Elegir URL disponible
   const url = urlO25 || urlOld;
 
-  // Si existe bloque O25 pero esta desactivado → no mostrar
   if (vivo && !activoO25) return null;
-
-  // Si no hay URL → no mostrar
   if (!url) return null;
 
   const handleClick = () => {
-    // Guardar estado actual O25 antes de salir al mapa
-    sessionStorage.setItem(
-      "O25_RETURN_STATE",
-      JSON.stringify({
-        pathname: window.location.pathname,
-        scrollY: window.scrollY,
-        timestamp: Date.now()
-      })
-    );
-
-    // Abrir ubicación sin destruir la app
-    window.open(url, "_blank", "noopener,noreferrer");
+    openExternalO25(url, "ubicacion");
   };
 
   return (

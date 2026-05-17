@@ -3,29 +3,17 @@
 // ============================================================
 
 import React from "react";
+import { openExternalO25 } from "../utils/openExternalO25";
 
 const iconPath = (name) => `/icons/${name}.png`;
 
 export default function VivoFacebook({ data, style }) {
   if (!style) return null;
 
-  const guardarRetornoO25 = () => {
-    sessionStorage.setItem(
-      "O25_RETURN_STATE",
-      JSON.stringify({
-        pathname: window.location.pathname,
-        scrollY: window.scrollY,
-        timestamp: Date.now(),
-        vivo: "facebook"
-      })
-    );
-  };
-
   // 🟣 MODELO ANTIGUO
   if (data?.facebook) {
     const handleClick = () => {
-      guardarRetornoO25();
-      window.open(data.facebook, "_blank", "noopener,noreferrer");
+      openExternalO25(data.facebook, "facebook");
     };
 
     return (
@@ -45,8 +33,7 @@ export default function VivoFacebook({ data, style }) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    guardarRetornoO25();
-    window.open(cfg.url, "_blank", "noopener,noreferrer");
+    openExternalO25(cfg.url, "facebook");
   };
 
   return (

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/latidos.css";
+import { openExternalO25 } from "../utils/openExternalO25";
 
 export default function VivoWhatsapp({ data, style, vivoKey = "whatsapp" }) {
   const vivoConfig = data?.vivos?.[vivoKey];
@@ -23,18 +24,7 @@ export default function VivoWhatsapp({ data, style, vivoKey = "whatsapp" }) {
 
   const handleClick = (e) => {
     e.preventDefault();
-
-    sessionStorage.setItem(
-      "O25_RETURN_STATE",
-      JSON.stringify({
-        pathname: window.location.pathname,
-        scrollY: window.scrollY,
-        timestamp: Date.now(),
-        vivo: vivoKey
-      })
-    );
-
-    window.open(url, "_blank", "noopener,noreferrer");
+    openExternalO25(url, vivoKey);
   };
 
   return (
