@@ -1,0 +1,51 @@
+{
+  "slug": "abogado_garcia",
+  "nombre": "Estudio Jurídico Julio García Molina & Asociados",
+  "giroSlug": "servicios-profesionales",
+  "giro": "Servicios Profesionales",
+
+  "flyer": "/anunciantes/abogado_garcia/flyer.png",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+Carlos+Izaguirre+1079,+Los+Olivos+15301/@-11.9918788,-77.0757785,17z/data=!4m6!3m5!1s0x9105ce5c199d8ccf:0x869d0972def6d1dc!8m2!3d-11.991947!4d-77.0748558!16s%2Fg%2F11yh237m4_?entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "telefono1": {
+      "activo": true,
+      "numero": "016228529"
+    },
+
+    "telefono2": {
+      "activo": false,
+      "numero": ""
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51968389428",
+      "mensaje": "Hola Dr. García. Vi su aviso en El Shopper Digital y deseo reservar una cita para exponer mi problema legal. Gracias."
+    },
+
+    "video": { "activo": false },
+
+    "carrusel": {
+      "activo": false,
+      "fotos": []
+    },
+
+    "oferta": {
+      "activo": false
+    },
+
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "ubicacion": { "top": "75%", "left": "04%", "width": "18%" },
+    "telefono1": { "top": "87%", "left": "31%", "width": "18%" },
+    "whatsapp": { "top": "87%", "left": "60%", "width": "18%" },
+    "volver": { "top": "95%", "left": "89%", "width": "12%" }
+  }
+}
