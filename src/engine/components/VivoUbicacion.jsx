@@ -17,8 +17,9 @@ export default function VivoUbicacion({ data, style }) {
   if (!url) return null;
 
   const handleClick = () => {
-    openExternalO25(url, "ubicacion");
-  };
+  console.log("📍 CLICK UBICACION:", url);
+  window.open(url, "_blank");
+};
 
   return (
     <div
