@@ -11,10 +11,5 @@ export function openExternalO25(url, vivo = "externo") {
     })
   );
 
-  if (vivo === "ubicacion") {
-    window.location.assign(url);
-    return;
-  }
-
   window.open(url, "_blank", "noopener,noreferrer");
 }
