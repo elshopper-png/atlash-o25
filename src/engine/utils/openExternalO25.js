@@ -82,8 +82,7 @@ export function openExternalO25(url, vivo = "externo") {
 
   // Abrir externo luego de breve pausa
   setTimeout(() => {
-    window.open(url, "_blank", "noopener,noreferrer");
-
+window.location.href = url;
     // limpiar overlay
     setTimeout(() => {
       overlay.remove();
