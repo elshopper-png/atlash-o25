@@ -55,7 +55,7 @@
     },
 
     "oferta": {
-      "activo": true,
+      "activo": false,
       "imagen": "/anunciantes/apupal/oferta.png",
       "animacion": "side-to-side"
     },

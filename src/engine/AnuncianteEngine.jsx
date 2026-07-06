@@ -17,12 +17,22 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   const [showVideo, setShowVideo] = useState(false);
 
   // 🧭 Restaurador O25: al volver desde un vivo externo
-  useEffect(() => {
+ // 🧭 Restaurador O25: al volver desde un vivo externo
+useEffect(() => {
+  const restoreO25Return = () => {
     const raw = sessionStorage.getItem("O25_RETURN_STATE");
     if (!raw) return;
 
     try {
       const state = JSON.parse(raw);
+      if (!state?.retornoPendiente) return;
+
+      const isSamePath = state.pathname === window.location.pathname;
+
+      if (!isSamePath && state.pathname) {
+        window.location.href = state.pathname;
+        return;
+      }
 
       if (state?.scrollY !== undefined) {
         setTimeout(() => {
@@ -30,12 +40,35 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
             top: Number(state.scrollY) || 0,
             behavior: "instant"
           });
-        }, 300);
+        }, 250);
       }
+
+      sessionStorage.setItem(
+        "O25_RETURN_STATE",
+        JSON.stringify({
+          ...state,
+          retornoPendiente: false,
+          restoredAt: Date.now()
+        })
+      );
     } catch (err) {
       console.warn("⚠️ No se pudo restaurar O25_RETURN_STATE", err);
     }
-  }, []);
+  };
+
+  restoreO25Return();
+
+  window.addEventListener("focus", restoreO25Return);
+  window.addEventListener("pageshow", restoreO25Return);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) restoreO25Return();
+  });
+
+  return () => {
+    window.removeEventListener("focus", restoreO25Return);
+    window.removeEventListener("pageshow", restoreO25Return);
+  };
+}, []);
 
   // 🧭 Cargar ficha desde /public/fichas
   useEffect(() => {
