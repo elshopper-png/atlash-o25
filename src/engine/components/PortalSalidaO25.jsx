@@ -35,9 +35,14 @@ export default function PortalSalidaO25() {
   };
 
   const abrirDestino = () => {
-    if (!state?.destino) return;
-    window.location.href = state.destino;
-  };
+  if (!state?.destino) return;
+
+  window.open(
+    state.destino,
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
 
   if (!state) {
     return (
