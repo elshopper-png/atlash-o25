@@ -3,29 +3,17 @@
 // ============================================================
 
 import React from "react";
+import { openExternalO25 } from "../utils/openExternalO25";
 
 const iconPath = (name) => `/icons/${name}.png`;
 
 export default function VivoInstagram({ data, style }) {
   if (!style) return null;
 
-  const guardarRetornoO25 = () => {
-    sessionStorage.setItem(
-      "O25_RETURN_STATE",
-      JSON.stringify({
-        pathname: window.location.pathname,
-        scrollY: window.scrollY,
-        timestamp: Date.now(),
-        vivo: "instagram"
-      })
-    );
-  };
-
   // 🟣 MODELO ANTIGUO
   if (data?.instagram) {
     const handleClick = () => {
-      guardarRetornoO25();
-      window.open(data.instagram, "_blank", "noopener,noreferrer");
+      openExternalO25(data.instagram, "instagram");
     };
 
     return (
@@ -45,8 +33,7 @@ export default function VivoInstagram({ data, style }) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    guardarRetornoO25();
-    window.open(cfg.url, "_blank", "noopener,noreferrer");
+    openExternalO25(cfg.url, "instagram");
   };
 
   return (

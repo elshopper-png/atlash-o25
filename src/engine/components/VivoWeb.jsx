@@ -3,29 +3,17 @@
 // ============================================================
 
 import React from "react";
+import { openExternalO25 } from "../utils/openExternalO25";
 
 const iconPath = (name) => `/icons/${name}.png`;
 
 export default function VivoWeb({ data, style }) {
   if (!style) return null;
 
-  const guardarRetornoO25 = () => {
-    sessionStorage.setItem(
-      "O25_RETURN_STATE",
-      JSON.stringify({
-        pathname: window.location.pathname,
-        scrollY: window.scrollY,
-        timestamp: Date.now(),
-        vivo: "web"
-      })
-    );
-  };
-
   // 🟣 MODELO ANTIGUO
   if (data?.web) {
     const handleClick = () => {
-      guardarRetornoO25();
-      window.open(data.web, "_blank", "noopener,noreferrer");
+      openExternalO25(data.web, "web");
     };
 
     return (
@@ -45,8 +33,7 @@ export default function VivoWeb({ data, style }) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    guardarRetornoO25();
-    window.open(cfg.url, "_blank", "noopener,noreferrer");
+    openExternalO25(cfg.url, "web");
   };
 
   return (
