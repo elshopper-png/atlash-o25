@@ -45,13 +45,13 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
         }
 
         sessionStorage.setItem(
-          "O25_RETURN_STATE",
-          JSON.stringify({
-            ...state,
-            retornoPendiente: false,
-            restoredAt: Date.now(),
-          })
-        );
+  "O25_RETURN_STATE",
+  JSON.stringify({
+    ...state,
+    retornoPendiente: true,
+    restoredAt: Date.now(),
+  })
+);
       } catch (err) {
         console.warn("⚠️ No se pudo restaurar O25_RETURN_STATE", err);
       }
