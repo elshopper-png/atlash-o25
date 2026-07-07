@@ -17,9 +17,9 @@
 
   "vivos": {
     "ubicacion": {
-      "activo": true,
-      "url": "https://www.google.com/maps/place/Jir%C3%B3n+Pomabamba+1212,+Lima+15301/@-11.9944972,-77.0780556,19z/data=!4m6!3m5!1s0x9105ce5e5b4de299:0x3ad587259dcfdd37!8m2!3d-11.9944635!4d-77.0777374!16s%2Fg%2F11f4pb2l9f"
-    },
+  "activo": true,
+  "url": "https://maps.google.com/?q=Jir%C3%B3n+Pomabamba+1212,+Lima+15301"
+},
 
     "whatsapp": {
       "activo": true,
