@@ -3,6 +3,8 @@
 // Versión móvil estable: evita pestaña intermedia rota en Android/iOS
 
 export function openExternalO25(url, vivo = "externo") {
+  alert("ENTRÉ A openExternalO25");
+
   if (!url) return;
 
   const returnState = {
@@ -21,6 +23,7 @@ export function openExternalO25(url, vivo = "externo") {
     console.warn("O25_RETURN_STATE no pudo guardarse:", error);
   }
 
-      // Salida móvil directa
+      alert("O25 saliendo a:\n" + url);
+        // Salida móvil directa
   window.location.href = url;
 }
