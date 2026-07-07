@@ -5,7 +5,7 @@ export function openExternalO25(url, vivo = "externo") {
   if (!url) return;
 
   const returnState = {
-    version: "O25_SALIDA_MODAL_V1",
+    version: "O25_SALIDA_MODAL_V2",
     pathname: window.location.pathname,
     scrollY: window.scrollY || 0,
     vivo,
@@ -16,5 +16,9 @@ export function openExternalO25(url, vivo = "externo") {
 
   sessionStorage.setItem("O25_RETURN_STATE", JSON.stringify(returnState));
 
-  window.location.href = url;
+  const nuevaVentana = window.open(url, "_blank", "noopener,noreferrer");
+
+  if (!nuevaVentana) {
+    window.location.assign(url);
+  }
 }
