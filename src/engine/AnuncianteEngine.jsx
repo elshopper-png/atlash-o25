@@ -1,5 +1,5 @@
 // ============================================================
-// 🧬 AnuncianteEngine.jsx — Motor único de avisos O25
+// 🧬 AnuncianteEngine.jsx — Motor único de avisos O25 (CORREGIDO)
 // ============================================================
 
 import React, { useState, useEffect } from "react";
@@ -21,6 +21,8 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   // 🧭 Restaurador O25: al volver desde un vivo externo
   useEffect(() => {
     const restoreO25Return = () => {
+      alert("O25 volvió a ejecutar JS");
+      
       const raw = sessionStorage.getItem("O25_RETURN_STATE");
       if (!raw) return;
 
@@ -31,9 +33,9 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
         const isSamePath = state.pathname === window.location.pathname;
 
         if (!isSamePath && state.pathname) {
-          window.location.href = state.pathname;
-          return;
-        }
+  window.location.href = state.pathname;
+  return;
+}
 
         if (state?.scrollY !== undefined) {
           setTimeout(() => {
@@ -44,30 +46,14 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
           }, 250);
         }
 
-        // Al regresar desde el vivo, reabrimos el modal amarillo
-        // como estación segura de retorno.
-        if (state?.destino && state?.vivo) {
-          setSalidaVivo({
-            icon: `/icons/${state.vivo}.png`,
-            open: () => {
-              const rawActual = sessionStorage.getItem("O25_RETURN_STATE");
-              const actual = rawActual ? JSON.parse(rawActual) : state;
-
-              if (!actual?.destino) return;
-
-              window.open(actual.destino, "_blank", "noopener,noreferrer");
-            },
-          });
-        }
-
         sessionStorage.setItem(
-          "O25_RETURN_STATE",
-          JSON.stringify({
-            ...state,
-            retornoPendiente: true,
-            restoredAt: Date.now(),
-          })
-        );
+  "O25_RETURN_STATE",
+  JSON.stringify({
+    ...state,
+    retornoPendiente: true,
+    restoredAt: Date.now(),
+  })
+);
       } catch (err) {
         console.warn("⚠️ No se pudo restaurar O25_RETURN_STATE", err);
       }
@@ -117,12 +103,16 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
     loadFicha();
   }, [slug]);
 
+  // ⏳ Mientras no hay data
   if (!data) {
     return <div style={{ padding: 20 }}>Cargando aviso…</div>;
   }
 
   const vivos = data.vivos || {};
   const zonas = MapaVivosO25(data);
+
+  console.log("🟦 VIVOSMAP =", data.vivosMap);
+  console.log("🟦 ZONAS CALCULADAS =", zonas);
 
   const carruselFotos =
     (vivos.carrusel?.fotos && vivos.carrusel.fotos.length
