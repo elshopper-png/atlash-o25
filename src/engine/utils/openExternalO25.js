@@ -1,12 +1,11 @@
 // src/engine/utils/openExternalO25.js
 // Punto único de salida externa O25
-// Versión móvil estable: evita pestaña intermedia rota en Android/iOS
 
 export function openExternalO25(url, vivo = "externo") {
   if (!url) return;
 
   const returnState = {
-    version: "O25_SALIDA_MODAL_V3_MOBILE_DIRECT",
+    version: "O25_SALIDA_MODAL_V2",
     pathname: window.location.pathname,
     scrollY: window.scrollY || 0,
     vivo,
@@ -15,12 +14,11 @@ export function openExternalO25(url, vivo = "externo") {
     retornoPendiente: true,
   };
 
-  try {
-    sessionStorage.setItem("O25_RETURN_STATE", JSON.stringify(returnState));
-  } catch (error) {
-    console.warn("O25_RETURN_STATE no pudo guardarse:", error);
-  }
+  sessionStorage.setItem("O25_RETURN_STATE", JSON.stringify(returnState));
 
-  // Salida móvil directa
-  window.location.href = url;
+  const nuevaVentana = window.open(url, "_blank", "noopener,noreferrer");
+
+  if (!nuevaVentana) {
+    window.location.assign(url);
+  }
 }
