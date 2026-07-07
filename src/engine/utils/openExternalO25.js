@@ -21,6 +21,6 @@ export function openExternalO25(url, vivo = "externo") {
     console.warn("O25_RETURN_STATE no pudo guardarse:", error);
   }
 
-    // Salida móvil directa sin dejar pantalla intermedia en historial
-  window.location.replace(url);
+      // Salida móvil directa
+  window.location.href = url;
 }
