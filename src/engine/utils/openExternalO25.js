@@ -5,7 +5,7 @@ export function openExternalO25(url, vivo = "externo") {
   if (!url) return;
 
   const returnState = {
-    version: "O25_SALIDA_MODAL_V2",
+    version: "O25_SALIDA_PORTAL_V1",
     pathname: window.location.pathname,
     scrollY: window.scrollY || 0,
     vivo,
@@ -14,11 +14,12 @@ export function openExternalO25(url, vivo = "externo") {
     retornoPendiente: true,
   };
 
-  sessionStorage.setItem("O25_RETURN_STATE", JSON.stringify(returnState));
+  sessionStorage.setItem(
+    "O25_RETURN_STATE",
+    JSON.stringify(returnState)
+  );
 
-  const nuevaVentana = window.open(url, "_blank", "noopener,noreferrer");
-
-  if (!nuevaVentana) {
-    window.location.assign(url);
-  }
+  // En lugar de salir directamente al vivo,
+  // primero pasamos por el Portal O25.
+  window.location.href = `${window.location.origin}/portal`;
 }
