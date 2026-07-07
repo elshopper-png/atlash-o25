@@ -10,65 +10,70 @@ import "../styles/vivos-o25.css";
 import "../styles/latidos.css";
 
 import CarruselO25 from "./components/CarruselO25.jsx";
+import SalidaVivoModal from "./components/SalidaVivoModal.jsx";
 
 export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   const [data, setData] = useState(null);
   const [showGallery, setShowGallery] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
+  const [salidaVivo, setSalidaVivo] = useState(null);
 
   // 🧭 Restaurador O25: al volver desde un vivo externo
- // 🧭 Restaurador O25: al volver desde un vivo externo
-useEffect(() => {
-  const restoreO25Return = () => {
-    const raw = sessionStorage.getItem("O25_RETURN_STATE");
-    if (!raw) return;
+  useEffect(() => {
+    const restoreO25Return = () => {
+      const raw = sessionStorage.getItem("O25_RETURN_STATE");
+      if (!raw) return;
 
-    try {
-      const state = JSON.parse(raw);
-      if (!state?.retornoPendiente) return;
+      try {
+        const state = JSON.parse(raw);
+        if (!state?.retornoPendiente) return;
 
-      const isSamePath = state.pathname === window.location.pathname;
+        const isSamePath = state.pathname === window.location.pathname;
 
-      if (!isSamePath && state.pathname) {
-        window.location.href = state.pathname;
-        return;
+        if (!isSamePath && state.pathname) {
+          window.location.href = state.pathname;
+          return;
+        }
+
+        if (state?.scrollY !== undefined) {
+          setTimeout(() => {
+            window.scrollTo({
+              top: Number(state.scrollY) || 0,
+              behavior: "instant",
+            });
+          }, 250);
+        }
+
+        sessionStorage.setItem(
+          "O25_RETURN_STATE",
+          JSON.stringify({
+            ...state,
+            retornoPendiente: false,
+            restoredAt: Date.now(),
+          })
+        );
+      } catch (err) {
+        console.warn("⚠️ No se pudo restaurar O25_RETURN_STATE", err);
       }
+    };
 
-      if (state?.scrollY !== undefined) {
-        setTimeout(() => {
-          window.scrollTo({
-            top: Number(state.scrollY) || 0,
-            behavior: "instant"
-          });
-        }, 250);
-      }
+    restoreO25Return();
 
-      sessionStorage.setItem(
-        "O25_RETURN_STATE",
-        JSON.stringify({
-          ...state,
-          retornoPendiente: false,
-          restoredAt: Date.now()
-        })
-      );
-    } catch (err) {
-      console.warn("⚠️ No se pudo restaurar O25_RETURN_STATE", err);
-    }
-  };
+    window.addEventListener("focus", restoreO25Return);
+    window.addEventListener("pageshow", restoreO25Return);
 
-  restoreO25Return();
+    const handleVisibilityChange = () => {
+      if (!document.hidden) restoreO25Return();
+    };
 
-  window.addEventListener("focus", restoreO25Return);
-  window.addEventListener("pageshow", restoreO25Return);
-  document.addEventListener("visibilitychange", () => {
-    if (!document.hidden) restoreO25Return();
-  });
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
-  return () => {
-    window.removeEventListener("focus", restoreO25Return);
-    window.removeEventListener("pageshow", restoreO25Return);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("focus", restoreO25Return);
+      window.removeEventListener("pageshow", restoreO25Return);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
 
   // 🧭 Cargar ficha desde /public/fichas
   useEffect(() => {
@@ -120,10 +125,27 @@ useEffect(() => {
     setShowVideo(false);
   };
 
+  const handleRequestExternal = (payload) => {
+    setSalidaVivo(payload);
+  };
+
+  const closeSalidaVivo = () => {
+    setSalidaVivo(null);
+  };
+
+  const handleContinueSalida = () => {
+    if (!salidaVivo?.open) return;
+    salidaVivo.open();
+    setSalidaVivo(null);
+  };
+
   const extraPropsByKey = (key) => {
     if (key === "carrusel") return { onClick: handleGalleryOpen };
     if (key === "video") return { onClick: handleVideoOpen };
-    return {};
+
+    return {
+      onRequestExternal: handleRequestExternal,
+    };
   };
 
   return (
@@ -157,6 +179,13 @@ useEffect(() => {
           );
         })}
       </div>
+
+      <SalidaVivoModal
+        open={Boolean(salidaVivo)}
+        icon={salidaVivo?.icon}
+        onContinue={handleContinueSalida}
+        onClose={closeSalidaVivo}
+      />
 
       {Array.isArray(carruselFotos) && carruselFotos.length > 0 && (
         <CarruselO25

@@ -1,10 +1,15 @@
 // src/engine/components/VivoUbicacion.jsx
+
 import React from "react";
 import { openExternalO25 } from "../utils/openExternalO25";
 
 const iconPath = (name) => `/icons/${name}.png`;
 
-export default function VivoUbicacion({ data, style }) {
+export default function VivoUbicacion({
+  data,
+  style,
+  onRequestExternal,
+}) {
   const vivo = data?.vivos?.ubicacion;
 
   const activoO25 = vivo?.activo;
@@ -17,9 +22,13 @@ export default function VivoUbicacion({ data, style }) {
   if (!url) return null;
 
   const handleClick = () => {
-  console.log("📍 CLICK UBICACION:", url);
-  openExternalO25(url, "ubicacion");
-};
+
+    onRequestExternal?.({
+      icon: iconPath("ubicacion"),
+      open: () => openExternalO25(url, "ubicacion"),
+    });
+
+  };
 
   return (
     <div
@@ -28,14 +37,18 @@ export default function VivoUbicacion({ data, style }) {
         position: "absolute",
         pointerEvents: "auto",
         zIndex: 20,
-        ...style
+        ...style,
       }}
       onClick={handleClick}
     >
       <img
         src={iconPath("ubicacion")}
         alt="Ubicación"
-        style={{ width: "100%", height: "auto", display: "block" }}
+        style={{
+          width: "100%",
+          height: "auto",
+          display: "block",
+        }}
         draggable={false}
       />
     </div>

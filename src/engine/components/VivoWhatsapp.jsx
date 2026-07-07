@@ -2,7 +2,12 @@ import React from "react";
 import "../../styles/latidos.css";
 import { openExternalO25 } from "../utils/openExternalO25";
 
-export default function VivoWhatsapp({ data, style, vivoKey = "whatsapp" }) {
+export default function VivoWhatsapp({
+  data,
+  style,
+  vivoKey = "whatsapp",
+  onRequestExternal,
+}) {
   const vivoConfig = data?.vivos?.[vivoKey];
 
   const numeroO25 = vivoConfig?.numero;
@@ -24,7 +29,11 @@ export default function VivoWhatsapp({ data, style, vivoKey = "whatsapp" }) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    openExternalO25(url, vivoKey);
+
+    onRequestExternal?.({
+      icon: "/icons/whatsapp.png",
+      open: () => openExternalO25(url, vivoKey),
+    });
   };
 
   return (
