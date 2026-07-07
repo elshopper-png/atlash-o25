@@ -31,9 +31,9 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
         const isSamePath = state.pathname === window.location.pathname;
 
         if (!isSamePath && state.pathname) {
-          window.location.href = state.pathname;
-          return;
-        }
+  window.location.replace(state.pathname);
+  return;
+}
 
         if (state?.scrollY !== undefined) {
           setTimeout(() => {
