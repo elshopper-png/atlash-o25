@@ -61,6 +61,7 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
     };
 
     document.addEventListener("visibilitychange", handleVisibility);
+    restoreO25R();
 
     return () => {
       window.removeEventListener("focus", restoreO25R);
