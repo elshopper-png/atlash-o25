@@ -21,7 +21,9 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   // 🟡 O25-R: detectar regreso desde vivo externo
   useEffect(() => {
     const restoreO25R = () => {
-      const raw = sessionStorage.getItem("O25R_RETURN");
+      const raw =
+  sessionStorage.getItem("O25R_RETURN") ||
+  localStorage.getItem("O25R_RETURN");
       if (!raw) return;
 
       try {
@@ -32,6 +34,7 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
         const age = Date.now() - Number(state.createdAt || 0);
         if (age > 10 * 60 * 1000) {
           sessionStorage.removeItem("O25R_RETURN");
+localStorage.removeItem("O25R_RETURN");
           return;
         }
 
@@ -50,6 +53,7 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
       } catch (err) {
         console.warn("⚠️ Error restaurando O25R_RETURN", err);
         sessionStorage.removeItem("O25R_RETURN");
+localStorage.removeItem("O25R_RETURN");
       }
     };
 
@@ -122,12 +126,14 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
 
   const closeSalidaVivo = () => {
     sessionStorage.removeItem("O25R_RETURN");
+localStorage.removeItem("O25R_RETURN");
     setSalidaVivo(null);
   };
 
   const handleContinueSalida = () => {
     if (salidaVivo?.modoRetorno) {
       sessionStorage.removeItem("O25R_RETURN");
+localStorage.removeItem("O25R_RETURN");
       setSalidaVivo(null);
       return;
     }
@@ -142,14 +148,14 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
       vivoKey: salidaVivo.vivoKey || null,
     };
 
-    sessionStorage.setItem(
-      "O25R_RETURN",
-      JSON.stringify({
-        active: true,
-        payload: payloadSeguro,
-        createdAt: Date.now(),
-      })
-    );
+    const estadoO25R = JSON.stringify({
+  active: true,
+  payload: payloadSeguro,
+  createdAt: Date.now(),
+});
+
+sessionStorage.setItem("O25R_RETURN", estadoO25R);
+localStorage.setItem("O25R_RETURN", estadoO25R);
 
     salidaVivo.open();
     setSalidaVivo(null);

@@ -1,24 +1,25 @@
 // src/engine/utils/openExternalO25.js
-// Punto único de salida externa O25
+// Punto único de salida externa O25-R
 
 export function openExternalO25(url, vivo = "externo") {
   if (!url) return;
 
   const returnState = {
-    version: "O25_SALIDA_MODAL_V2",
-    pathname: window.location.pathname,
-    scrollY: window.scrollY || 0,
+    version: "O25R_V1",
+    active: true,
     vivo,
     destino: url,
-    timestamp: Date.now(),
-    retornoPendiente: true,
+    createdAt: Date.now(),
   };
 
-  sessionStorage.setItem("O25_RETURN_STATE", JSON.stringify(returnState));
+  const serialized = JSON.stringify(returnState);
 
-  const nuevaVentana = window.open(url, "_blank", "noopener,noreferrer");
+  sessionStorage.setItem("O25R_RETURN", serialized);
+  localStorage.setItem("O25R_RETURN", serialized);
+
+  const nuevaVentana = window.open(url, "_blank");
 
   if (!nuevaVentana) {
-    window.location.assign(url);
+    window.location.href = url;
   }
 }
