@@ -1,5 +1,5 @@
 // ============================================================
-// 🧬 AnuncianteEngine.jsx — Motor único de avisos O25 (CORREGIDO)
+// 🧬 AnuncianteEngine.jsx — Motor único de avisos O25-R
 // ============================================================
 
 import React, { useState, useEffect } from "react";
@@ -18,62 +18,54 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   const [showVideo, setShowVideo] = useState(false);
   const [salidaVivo, setSalidaVivo] = useState(null);
 
-  // 🧭 Restaurador O25: al volver desde un vivo externo
+  // 🟡 O25-R: detectar regreso desde vivo externo
   useEffect(() => {
-    const restoreO25Return = () => {
-      alert("O25 volvió a ejecutar JS");
-      
-      const raw = sessionStorage.getItem("O25_RETURN_STATE");
+    const restoreO25R = () => {
+      const raw = sessionStorage.getItem("O25R_RETURN");
       if (!raw) return;
 
       try {
         const state = JSON.parse(raw);
-        if (!state?.retornoPendiente) return;
 
-        const isSamePath = state.pathname === window.location.pathname;
+        if (!state?.active) return;
 
-        if (!isSamePath && state.pathname) {
-  window.location.href = state.pathname;
-  return;
-}
-
-        if (state?.scrollY !== undefined) {
-          setTimeout(() => {
-            window.scrollTo({
-              top: Number(state.scrollY) || 0,
-              behavior: "instant",
-            });
-          }, 250);
+        const age = Date.now() - Number(state.createdAt || 0);
+        if (age > 10 * 60 * 1000) {
+          sessionStorage.removeItem("O25R_RETURN");
+          return;
         }
 
-        sessionStorage.setItem(
-  "O25_RETURN_STATE",
-  JSON.stringify({
-    ...state,
-    retornoPendiente: true,
-    restoredAt: Date.now(),
-  })
-);
+        setSalidaVivo((actual) => {
+          if (actual?.modoRetorno) return actual;
+
+          return {
+            icon: state.payload?.icon || null,
+            label: state.payload?.label || null,
+            title: state.payload?.title || null,
+            tipo: state.payload?.tipo || null,
+            vivoKey: state.payload?.vivoKey || null,
+            modoRetorno: true,
+          };
+        });
       } catch (err) {
-        console.warn("⚠️ No se pudo restaurar O25_RETURN_STATE", err);
+        console.warn("⚠️ Error restaurando O25R_RETURN", err);
+        sessionStorage.removeItem("O25R_RETURN");
       }
     };
 
-    restoreO25Return();
+    window.addEventListener("focus", restoreO25R);
+    window.addEventListener("pageshow", restoreO25R);
 
-    window.addEventListener("focus", restoreO25Return);
-    window.addEventListener("pageshow", restoreO25Return);
-
-    const handleVisibilityChange = () => {
-      if (!document.hidden) restoreO25Return();
+    const handleVisibility = () => {
+      if (!document.hidden) restoreO25R();
     };
 
-    document.addEventListener("visibilitychange", handleVisibilityChange);
+    document.addEventListener("visibilitychange", handleVisibility);
 
     return () => {
-      window.removeEventListener("focus", restoreO25Return);
-      window.removeEventListener("pageshow", restoreO25Return);
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("focus", restoreO25R);
+      window.removeEventListener("pageshow", restoreO25R);
+      document.removeEventListener("visibilitychange", handleVisibility);
     };
   }, []);
 
@@ -103,16 +95,12 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
     loadFicha();
   }, [slug]);
 
-  // ⏳ Mientras no hay data
   if (!data) {
     return <div style={{ padding: 20 }}>Cargando aviso…</div>;
   }
 
   const vivos = data.vivos || {};
   const zonas = MapaVivosO25(data);
-
-  console.log("🟦 VIVOSMAP =", data.vivosMap);
-  console.log("🟦 ZONAS CALCULADAS =", zonas);
 
   const carruselFotos =
     (vivos.carrusel?.fotos && vivos.carrusel.fotos.length
@@ -132,11 +120,36 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   };
 
   const closeSalidaVivo = () => {
+    sessionStorage.removeItem("O25R_RETURN");
     setSalidaVivo(null);
   };
 
   const handleContinueSalida = () => {
+    if (salidaVivo?.modoRetorno) {
+      sessionStorage.removeItem("O25R_RETURN");
+      setSalidaVivo(null);
+      return;
+    }
+
     if (!salidaVivo?.open) return;
+
+    const payloadSeguro = {
+      icon: salidaVivo.icon || null,
+      label: salidaVivo.label || null,
+      title: salidaVivo.title || null,
+      tipo: salidaVivo.tipo || null,
+      vivoKey: salidaVivo.vivoKey || null,
+    };
+
+    sessionStorage.setItem(
+      "O25R_RETURN",
+      JSON.stringify({
+        active: true,
+        payload: payloadSeguro,
+        createdAt: Date.now(),
+      })
+    );
+
     salidaVivo.open();
     setSalidaVivo(null);
   };
@@ -185,6 +198,7 @@ export default function AnuncianteEngine({ slug = "saul-garrido" }) {
       <SalidaVivoModal
         open={Boolean(salidaVivo)}
         icon={salidaVivo?.icon}
+        modoRetorno={Boolean(salidaVivo?.modoRetorno)}
         onContinue={handleContinueSalida}
         onClose={closeSalidaVivo}
       />
