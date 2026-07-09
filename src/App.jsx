@@ -16,8 +16,9 @@ function getSlugFromLocation() {
 
 export default function App() {
   const params = new URLSearchParams(window.location.search);
+  const hash = window.location.hash;
 
-  if (params.get("o25portal") === "1") {
+  if (params.get("o25portal") === "1" || hash === "#o25portal") {
     return <PortalSalidaO25 />;
   }
 
