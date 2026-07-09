@@ -15,7 +15,10 @@ export default function PortalSalidaO25() {
   const [state, setState] = useState(null);
 
   useEffect(() => {
-    const raw = sessionStorage.getItem("O25_RETURN_STATE");
+    const raw =
+      sessionStorage.getItem("O25_RETURN_STATE") ||
+      localStorage.getItem("O25_RETURN_STATE");
+
     if (!raw) return;
 
     try {
@@ -35,14 +38,9 @@ export default function PortalSalidaO25() {
   };
 
   const abrirDestino = () => {
-  if (!state?.destino) return;
-
-  window.open(
-    state.destino,
-    "_blank",
-    "noopener,noreferrer"
-  );
-};
+    if (!state?.destino) return;
+    window.location.href = state.destino;
+  };
 
   if (!state) {
     return (
@@ -51,7 +49,10 @@ export default function PortalSalidaO25() {
           <div style={styles.badge}>Shopper Digital</div>
           <h1 style={styles.title}>No encontramos el aviso</h1>
           <p style={styles.text}>Regresa al inicio para continuar navegando.</p>
-          <button style={styles.secondary} onClick={() => (window.location.href = "/")}>
+          <button
+            style={styles.secondary}
+            onClick={() => (window.location.href = "/")}
+          >
             Ir al inicio
           </button>
         </section>
@@ -67,7 +68,8 @@ export default function PortalSalidaO25() {
         <h1 style={styles.title}>Está saliendo hacia {nombre}</h1>
 
         <p style={styles.text}>
-          Cuando termine de navegar, vuelva a esta pantalla y toque el botón para regresar directamente al aviso del anunciante.
+          Cuando termine de navegar, vuelva a esta pantalla y toque el botón
+          para regresar directamente al aviso del anunciante.
         </p>
 
         <button style={styles.primary} onClick={abrirDestino}>
@@ -91,7 +93,8 @@ const styles = {
     justifyContent: "center",
     padding: 22,
     boxSizing: "border-box",
-    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+    fontFamily:
+      "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
   },
   card: {
     width: "100%",
