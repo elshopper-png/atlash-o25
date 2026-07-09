@@ -40,8 +40,9 @@ export default function PortalSalidaO25() {
   const abrirDestino = () => {
   if (!state?.destino) return;
 
-  window.open(state.destino, "_blank");
+  window.open(state.destino);
 };
+
   if (!state) {
     return (
       <main style={styles.page}>
