@@ -1,5 +1,5 @@
 // ============================================================
-// 🔑 main.jsx — Entrada única ATLASH O25
+// 🔑 main.jsx — Entrada única ATLASH O25-R
 // ============================================================
 
 import React from "react";
@@ -15,9 +15,15 @@ function getSlugFromPathname() {
 }
 
 function RootO25() {
+  const params = new URLSearchParams(window.location.search);
+  const hash = window.location.hash;
   const pathname = window.location.pathname;
 
-  if (pathname.startsWith("/portal")) {
+  if (
+    pathname.startsWith("/portal") ||
+    params.get("o25portal") === "1" ||
+    hash === "#o25portal"
+  ) {
     return <PortalSalidaO25 />;
   }
 
