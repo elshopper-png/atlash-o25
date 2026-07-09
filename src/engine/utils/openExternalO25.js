@@ -1,25 +1,23 @@
 // src/engine/utils/openExternalO25.js
-// Punto único de salida externa O25-R
+// Punto único de salida externa O25 — Portal negro funcional
 
 export function openExternalO25(url, vivo = "externo") {
   if (!url) return;
 
   const returnState = {
-    version: "O25R_V1",
-    active: true,
+    version: "O25_PORTAL_RETORNO_V1",
+    pathname: window.location.pathname,
+    scrollY: window.scrollY || 0,
     vivo,
     destino: url,
-    createdAt: Date.now(),
+    timestamp: Date.now(),
+    retornoPendiente: true,
   };
 
   const serialized = JSON.stringify(returnState);
 
-  sessionStorage.setItem("O25R_RETURN", serialized);
-  localStorage.setItem("O25R_RETURN", serialized);
+  sessionStorage.setItem("O25_RETURN_STATE", serialized);
+  localStorage.setItem("O25_RETURN_STATE", serialized);
 
-  const nuevaVentana = window.open(url, "_blank");
-
-  if (!nuevaVentana) {
-    window.location.href = url;
-  }
+  window.location.href = "/o25-salida";
 }
