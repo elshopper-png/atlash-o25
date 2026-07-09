@@ -9,17 +9,15 @@ function getSlugFromLocation() {
   const parts = pathname.split("/").filter(Boolean);
 
   if (parts.length === 0) return "saul-garrido";
-
   if (parts[0] === "atlash" && parts[1]) return parts[1];
 
   return parts[0];
 }
 
 export default function App() {
-  const parts = window.location.pathname.split("/").filter(Boolean);
+  const params = new URLSearchParams(window.location.search);
 
-  // Ruta interna del Portal O25-R
-  if (parts[0] === "o25-salida") {
+  if (params.get("o25portal") === "1") {
     return <PortalSalidaO25 />;
   }
 
