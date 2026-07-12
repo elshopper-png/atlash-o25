@@ -121,8 +121,10 @@ localStorage.removeItem("O25R_RETURN");
   };
 
   const handleRequestExternal = (payload) => {
-    setSalidaVivo(payload);
-  };
+  if (!payload?.open) return;
+
+  payload.open();
+};
 
   const closeSalidaVivo = () => {
     sessionStorage.removeItem("O25R_RETURN");
