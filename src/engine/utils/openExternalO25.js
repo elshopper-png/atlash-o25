@@ -1,5 +1,5 @@
 // src/engine/utils/openExternalO25.js
-// Punto único de salida externa O25 — apertura directa
+// Punto único de salida externa O25 — Portal funcional
 
 export function openExternalO25(url, vivo = "externo") {
   if (!url) return;
@@ -23,6 +23,6 @@ export function openExternalO25(url, vivo = "externo") {
   sessionStorage.setItem("O25_RETURN_STATE", serialized);
   localStorage.setItem("O25_RETURN_STATE", serialized);
 
-  // Android WebView intercepta este enlace y abre la aplicación externa.
-  window.location.href = url;
+  const pathActual = window.location.pathname || "/";
+  window.location.href = `${pathActual}?o25portal=1#o25portal`;
 }
