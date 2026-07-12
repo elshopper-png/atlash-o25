@@ -237,8 +237,7 @@ const styles = {
   alignItems: "center",
   justifyContent: "center",
 
-  padding: "46px 28px 34px",
-
+  padding: "24px 28px 26px",
   boxSizing: "border-box",
 
   background: "#FFFFFF",
@@ -246,6 +245,16 @@ const styles = {
   borderRadius: 30,
 
   boxShadow: "0 16px 45px rgba(0,0,0,.12)",
+},
+locationIcon: {
+  width: 90,
+  height: 90,
+
+  objectFit: "contain",
+
+  display: "block",
+
+  marginBottom: 32,
 },
 
   yellowButton: {
@@ -295,16 +304,18 @@ const styles = {
   marginBottom: 26,
 },
 helpText: {
-  marginTop: 4,
+  marginTop: 8,
 
-  fontSize: 14,
+  fontSize: 16,
+
+  fontWeight: 500,
 
   lineHeight: 1.45,
 
-  color: "#666666",
+  color: "#555555",
 
   textAlign: "center",
 
-  maxWidth: 290,
+  maxWidth: 300,
 },
 };
