@@ -15,6 +15,19 @@ const NOMBRES = {
 
 const ICONOS = {
   ubicacion: "/icons/ubicacion.png",
+  whatsapp: "/icons/whatsapp.png",
+  facebook: "/icons/facebook.png",
+  instagram: "/icons/instagram.png",
+  tiktok: "/icons/tiktok.png",
+  youtube: "/icons/youtube.png",
+  web: "/icons/web.png",
+
+  // Alias posibles según el nombre usado por cada Vivo.
+  email: "/icons/email.png",
+  correo: "/icons/email.png",
+
+  telefono: "/icons/telefono.png",
+  tel: "/icons/telefono.png",
 };
 
 export default function PortalSalidaO25() {
@@ -37,6 +50,7 @@ export default function PortalSalidaO25() {
   const nombre = useMemo(() => {
     return NOMBRES[state?.vivo] || NOMBRES.externo;
   }, [state]);
+  const iconoVivo = ICONOS[state?.vivo] || null;
 
   const volverAlAviso = () => {
     const destino = state?.pathname || "/";
@@ -77,22 +91,22 @@ export default function PortalSalidaO25() {
   /*
    * PROTOTIPO EXCLUSIVO PARA UBICACIÓN
    */
-  if (state.vivo === "ubicacion") {
+  if (iconoVivo) {
     return (
       <main style={styles.locationPage}>
         <section style={styles.locationPanel}>
-          <img
-            src={ICONOS.ubicacion}
-            alt="Ubicación"
-            style={styles.locationIcon}
-            draggable={false}
-          />
+         <img
+  src={iconoVivo}
+  alt={nombre}
+  style={styles.locationIcon}
+  draggable={false}
+/>
 
          <button
   type="button"
   style={styles.yellowButton}
   onClick={abrirDestino}
-  aria-label="Abrir ubicación"
+  aria-label={`Abrir ${nombre}`}
 >
   CONTINUAR
 </button>
