@@ -53,9 +53,18 @@ export default function PortalSalidaO25() {
   const iconoVivo = ICONOS[state?.vivo] || null;
 
   const volverAlAviso = () => {
-    const destino = state?.pathname || "/";
-    window.location.href = destino;
-  };
+  const destino = state?.pathname || "/";
+
+  sessionStorage.removeItem("O25_RETURN_STATE");
+  localStorage.removeItem("O25_RETURN_STATE");
+
+  if (window.history.length > 1) {
+    window.history.back();
+    return;
+  }
+
+  window.location.replace(destino);
+};
 
   const abrirDestino = () => {
     if (!state?.destino) return;
