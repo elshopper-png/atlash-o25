@@ -220,9 +220,7 @@ const styles = {
     boxSizing: "border-box",
     overflow: "hidden",
 
-    background:
-      "radial-gradient(circle at 50% 35%, rgba(72,72,72,.72), rgba(3,3,3,.94) 72%)",
-
+    background: "#F5F6F8",
     fontFamily:
       "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
   },
