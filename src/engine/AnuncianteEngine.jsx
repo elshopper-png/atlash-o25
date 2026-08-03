@@ -272,12 +272,11 @@ localStorage.setItem("O25R_RETURN", estadoO25R);
    * Video, video1, video2...
    */
   if (claveBase === "video") {
-    return {
-      onClick: () =>
-        handleVideoOpen(key)
-    };
-  }
-
+  return {
+    onClick: () =>
+      registrarCanal(key)
+  };
+}
   /*
    * Todos los vivos externos:
    * WhatsApp, Facebook, Instagram, Web,

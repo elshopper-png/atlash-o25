@@ -1,4 +1,6 @@
-// src/engine/components/VivoVideo.jsx
+// ============================================================
+// 🎬 VivoVideo — Primer botón de video O25
+// ============================================================
 
 import React from "react";
 
@@ -16,11 +18,11 @@ export default function VivoVideo({
   let url = null;
 
   if (vivoKey === "video1") {
-    url = data.video1_url;
+    url = data?.video1_url;
   } else if (vivoKey === "video2") {
-    url = data.video2_url;
+    url = data?.video2_url;
   } else {
-    url = data.video_url;
+    url = data?.video_url;
   }
 
   if (!url) return null;
@@ -29,17 +31,14 @@ export default function VivoVideo({
     event.preventDefault();
 
     /*
-     * Si AnuncianteEngine entrega un manejador,
-     * lo usamos para registrar Video en Shopper Insight.
+     * Primero registra en Shopper Insight.
      */
     if (onClick) {
       await onClick();
-      return;
     }
 
     /*
-     * Compatibilidad con usos antiguos
-     * donde VivoVideo se renderiza sin el motor central.
+     * Después abre el video.
      */
     window.open(
       url,
