@@ -31,20 +31,31 @@ export default function VivoVideo({
     event.preventDefault();
 
     /*
-     * Primero registra en Shopper Insight.
+     * Abrimos inmediatamente una pestaña vacía
+     * para conservar el permiso del clic del usuario.
+     */
+    const ventanaVideo = window.open(
+      "about:blank",
+      "_blank"
+    );
+
+    /*
+     * Registramos el movimiento antes de cargar el video.
      */
     if (onClick) {
       await onClick();
     }
 
+    if (ventanaVideo) {
+      ventanaVideo.opener = null;
+      ventanaVideo.location.href = url;
+      return;
+    }
+
     /*
-     * Después abre el video.
+     * Respaldo si el navegador bloquea la pestaña.
      */
-    window.open(
-      url,
-      "_blank",
-      "noopener,noreferrer"
-    );
+    window.location.href = url;
   };
 
   return (
