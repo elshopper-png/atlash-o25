@@ -125,13 +125,32 @@ localStorage.removeItem("O25R_RETURN");
 
 setData(json);
 
-// Registrar la llegada efectiva al aviso digital.
-// No exige que el usuario pulse ningún vivo.
-registrarMovimientoShopper(
-  json.nombre || slug,
-  "Flyer",
-  `flyer-${slug}`
-);
+/*
+ * Registra la llegada efectiva al aviso digital
+ * una sola vez por anunciante durante esta sesión.
+ *
+ * Al volver desde WhatsApp, Facebook, Instagram,
+ * Web u otro vivo, el aviso puede recargarse,
+ * pero Flyer no debe inflarse nuevamente.
+ */
+const flyerSessionKey =
+  `SHOPPER_FLYER_SESION_${slug}`;
+
+if (!sessionStorage.getItem(flyerSessionKey)) {
+  const registrado =
+    await registrarMovimientoShopper(
+      json.nombre || slug,
+      "Flyer",
+      `flyer-${slug}`
+    );
+
+  if (registrado) {
+    sessionStorage.setItem(
+      flyerSessionKey,
+      "1"
+    );
+  }
+}
       } catch (err) {
         console.error("❌ Error cargando ficha:", slug, err);
         setData(null);
@@ -154,7 +173,12 @@ registrarMovimientoShopper(
       : data.gallery) || [];
 
   const registrarCanal = async (key) => {
-  const canal = CANALES_SHOPPER[key];
+  const claveBase = String(key || "")
+  .replace(/\d+$/, "");
+
+const canal =
+  CANALES_SHOPPER[key] ||
+  CANALES_SHOPPER[claveBase];
 
   if (!canal || !data?.nombre) {
     return false;
@@ -167,13 +191,13 @@ registrarMovimientoShopper(
   );
 };
 
-const handleGalleryOpen = () => {
-  registrarCanal("carrusel");
+const handleGalleryOpen = async (key = "carrusel") => {
+  await registrarCanal(key);
   setShowGallery(true);
 };
 
-const handleVideoOpen = () => {
-  registrarCanal("video");
+const handleVideoOpen = async (key = "video") => {
+  await registrarCanal(key);
   setShowVideo(true);
 };
 
@@ -231,24 +255,39 @@ localStorage.setItem("O25R_RETURN", estadoO25R);
   };
 
   const extraPropsByKey = (key) => {
-  if (key === "carrusel") {
+  const claveBase = String(key || "")
+    .replace(/\d+$/, "");
+
+  /*
+   * Carrusel, carrusel1, carrusel2...
+   */
+  if (claveBase === "carrusel") {
     return {
-      onClick: handleGalleryOpen
+      onClick: () =>
+        handleGalleryOpen(key)
     };
   }
 
-  if (key === "video") {
+  /*
+   * Video, video1, video2...
+   */
+  if (claveBase === "video") {
     return {
-      onClick: handleVideoOpen
+      onClick: () =>
+        handleVideoOpen(key)
     };
   }
 
+  /*
+   * Todos los vivos externos:
+   * WhatsApp, Facebook, Instagram, Web,
+   * Ubicación, Teléfono, Email, etc.
+   */
   return {
     onRequestExternal: (payload) =>
       handleRequestExternal(key, payload)
   };
 };
-
   return (
     <div className="o25-wrapper">
       <div className="o25-flyer-shell">
