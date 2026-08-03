@@ -11,6 +11,38 @@ import "../styles/latidos.css";
 
 import CarruselO25 from "./components/CarruselO25.jsx";
 import SalidaVivoModal from "./components/SalidaVivoModal.jsx";
+import { registrarMovimientoShopper } from "./utils/registrarMovimientoShopper";
+
+// ============================================================
+// Canales oficiales de Shopper Insight
+// ============================================================
+
+const CANALES_SHOPPER = {
+  ubicacion: "Ubicación",
+
+  whatsapp: "WhatsApp",
+  whatsapp1: "WhatsApp",
+  whatsapp2: "WhatsApp",
+
+  telefono: "Teléfono",
+  telefono1: "Teléfono",
+  telefono2: "Teléfono",
+
+  carrusel: "Carrusel",
+
+  video: "Video",
+  video1: "Video",
+
+  facebook: "Facebook",
+  instagram: "Instagram",
+  youtube: "YouTube",
+  tiktok: "TikTok",
+
+  web: "Web",
+  email: "Email",
+
+  oferta: "Ofertas"
+};
 
 export default function AnuncianteEngine({ slug = "saul-garrido" }) {
   const [data, setData] = useState(null);
@@ -90,7 +122,16 @@ localStorage.removeItem("O25R_RETURN");
         }
 
         const json = await res.json();
-        setData(json);
+
+setData(json);
+
+// Registrar la llegada efectiva al aviso digital.
+// No exige que el usuario pulse ningún vivo.
+registrarMovimientoShopper(
+  json.nombre || slug,
+  "Flyer",
+  `flyer-${slug}`
+);
       } catch (err) {
         console.error("❌ Error cargando ficha:", slug, err);
         setData(null);
@@ -112,20 +153,46 @@ localStorage.removeItem("O25R_RETURN");
       ? vivos.carrusel.fotos
       : data.gallery) || [];
 
-  const handleGalleryOpen = () => setShowGallery(true);
-  const handleVideoOpen = () => setShowVideo(true);
+  const registrarCanal = async (key) => {
+  const canal = CANALES_SHOPPER[key];
+
+  if (!canal || !data?.nombre) {
+    return false;
+  }
+
+  return await registrarMovimientoShopper(
+    data.nombre,
+    canal,
+    `${slug}-${key}`
+  );
+};
+
+const handleGalleryOpen = () => {
+  registrarCanal("carrusel");
+  setShowGallery(true);
+};
+
+const handleVideoOpen = () => {
+  registrarCanal("video");
+  setShowVideo(true);
+};
 
   const closeOverlays = () => {
     setShowGallery(false);
     setShowVideo(false);
   };
-
-  const handleRequestExternal = (payload) => {
+const handleRequestExternal = async (key, payload) => {
   if (!payload?.open) return;
 
+  /*
+   * Esperamos a que Shopper Insight termine
+   * el registro antes de abrir la app externa.
+   */
+  await registrarCanal(key);
+
+  // Mantiene intacto el flujo O25 actual.
   payload.open();
 };
-
   const closeSalidaVivo = () => {
     sessionStorage.removeItem("O25R_RETURN");
 localStorage.removeItem("O25R_RETURN");
@@ -164,13 +231,23 @@ localStorage.setItem("O25R_RETURN", estadoO25R);
   };
 
   const extraPropsByKey = (key) => {
-    if (key === "carrusel") return { onClick: handleGalleryOpen };
-    if (key === "video") return { onClick: handleVideoOpen };
-
+  if (key === "carrusel") {
     return {
-      onRequestExternal: handleRequestExternal,
+      onClick: handleGalleryOpen
     };
+  }
+
+  if (key === "video") {
+    return {
+      onClick: handleVideoOpen
+    };
+  }
+
+  return {
+    onRequestExternal: (payload) =>
+      handleRequestExternal(key, payload)
   };
+};
 
   return (
     <div className="o25-wrapper">
