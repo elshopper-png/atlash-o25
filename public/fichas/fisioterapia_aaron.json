@@ -1,0 +1,43 @@
+{
+  "slug": "fisioterapia_aaron",
+  "nombre": "Fisioterapia Aarón",
+
+  "flyer": "/anunciantes/fisioterapia_aaron/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51978499984",
+      "mensaje": "Hola Fisioterapia Aarón, vi su anuncio en el Shopper Digital y quisiera reservar una cita, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/antonio.masgobandan/directory_intro"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/antoniomasgo/"
+    },
+
+    "tiktok": {
+      "activo": true,
+      "url": "https://www.tiktok.com/@antoniomasgo3"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": { "top": "85%", "left": "73%", "width": "20%" },
+    "facebook": { "top": "87%", "left": "05%", "width": "17%" },
+    "instagram": { "top": "87%", "left": "27%", "width": "17%" },
+    "tiktok": { "top": "87%", "left": "50%", "width": "17%" },
+    "volver": { "top": "94%", "left": "84%", "width": "14%" }
+  },
+
+  "carrusel": []
+}
