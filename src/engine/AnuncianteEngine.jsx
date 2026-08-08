@@ -133,24 +133,13 @@ setData(json);
  * Web u otro vivo, el aviso puede recargarse,
  * pero Flyer no debe inflarse nuevamente.
  */
-const flyerSessionKey =
-  `SHOPPER_FLYER_SESION_${slug}`;
+await registrarMovimientoShopper(
+  json.nombre || slug,
+  "Flyer",
+  `flyer-${slug}`
+);
 
-if (!sessionStorage.getItem(flyerSessionKey)) {
-  const registrado =
-    await registrarMovimientoShopper(
-      json.nombre || slug,
-      "Flyer",
-      `flyer-${slug}`
-    );
 
-  if (registrado) {
-    sessionStorage.setItem(
-      flyerSessionKey,
-      "1"
-    );
-  }
-}
       } catch (err) {
         console.error("❌ Error cargando ficha:", slug, err);
         setData(null);
