@@ -2,6 +2,10 @@ import React, { useEffect, useMemo, useState } from "react";
 
 const NOMBRES = {
   whatsapp: "WhatsApp",
+  whatsapp1: "WhatsApp",
+  whatsapp2: "WhatsApp",
+  whatsapp3: "WhatsApp",
+
   ubicacion: "Ubicación",
   facebook: "Facebook",
   instagram: "Instagram",
@@ -15,14 +19,18 @@ const NOMBRES = {
 
 const ICONOS = {
   ubicacion: "/icons/ubicacion.png",
+
   whatsapp: "/icons/whatsapp.png",
+  whatsapp1: "/icons/whatsapp.png",
+  whatsapp2: "/icons/whatsapp.png",
+  whatsapp3: "/icons/whatsapp.png",
+
   facebook: "/icons/facebook.png",
   instagram: "/icons/instagram.png",
   tiktok: "/icons/tiktok.png",
   youtube: "/icons/youtube.png",
   web: "/icons/web.png",
 
-  // Alias posibles según el nombre usado por cada Vivo.
   email: "/icons/email.png",
   correo: "/icons/email.png",
 
