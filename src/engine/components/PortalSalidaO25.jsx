@@ -63,6 +63,9 @@ export default function PortalSalidaO25() {
   const volverAlAviso = () => {
   const destino = state?.pathname || "/";
 
+  // Marca que la próxima carga del aviso es un regreso desde un vivo.
+  sessionStorage.setItem("O25_SKIP_NEXT_FLYER", destino);
+
   sessionStorage.removeItem("O25_RETURN_STATE");
   localStorage.removeItem("O25_RETURN_STATE");
 

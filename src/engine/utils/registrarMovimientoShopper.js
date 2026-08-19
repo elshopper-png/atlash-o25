@@ -51,28 +51,17 @@ export async function registrarMovimientoShopper(
   );
 
   /*
- * Flyer: una sola vez por sesión.
- * Otros canales: evita duplicados accidentales
- * durante 5 segundos.
- */
-if (clave.startsWith("flyer-")) {
-  if (ultimoRegistro > 0) {
+   * Evita duplicados accidentales durante 5 segundos.
+   */
+  if (ahora - ultimoRegistro < 5000) {
     console.log(
-      "ℹ️ Flyer ya registrado en esta sesión:",
-      anunciante
+      "ℹ️ Movimiento duplicado omitido:",
+      anunciante,
+      canal
     );
 
     return true;
   }
-} else if (ahora - ultimoRegistro < 5000) {
-  console.log(
-    "ℹ️ Movimiento duplicado omitido:",
-    anunciante,
-    canal
-  );
-
-  return true;
-}
 
   sessionStorage.setItem(
     storageKey,

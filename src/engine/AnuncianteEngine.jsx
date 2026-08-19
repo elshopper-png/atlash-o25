@@ -133,11 +133,25 @@ setData(json);
  * Web u otro vivo, el aviso puede recargarse,
  * pero Flyer no debe inflarse nuevamente.
  */
-await registrarMovimientoShopper(
-  json.nombre || slug,
-  "Flyer",
-  `flyer-${slug}`
-);
+const skipNextFlyer =
+  sessionStorage.getItem("O25_SKIP_NEXT_FLYER");
+
+const rutaActual = `/atlash/${slug}`;
+
+if (skipNextFlyer === rutaActual) {
+  sessionStorage.removeItem("O25_SKIP_NEXT_FLYER");
+
+  console.log(
+    "ℹ️ Flyer omitido: regreso desde vivo O25",
+    slug
+  );
+} else {
+  await registrarMovimientoShopper(
+    json.nombre || slug,
+    "Flyer",
+    `flyer-${slug}`
+  );
+}
 
 
       } catch (err) {
