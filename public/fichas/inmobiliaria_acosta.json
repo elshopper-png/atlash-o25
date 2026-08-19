@@ -1,0 +1,72 @@
+{
+  "slug": "inmobiliaria_acosta",
+
+  "nombre": "Inmobiliaria Acosta",
+  "flyer": "/anunciantes/inmobiliaria_acosta/flyer.png",
+
+  "whatsapp": "51962025355",
+  "whatsappMessage": "Hola Inmobiliaria Acosta, vi su aviso en el Shopper Digital y deseo más información de su proyecto residencial Parque COOPIP, gracias.",
+
+  "mapa_url": "https://www.google.com/maps/place/11%C2%B059'42.4%22S+77%C2%B005'53.3%22W/@-11.9951538,-77.100814,16z/data=!4m4!3m3!8m2!3d-11.9950987!4d-77.0981479?hl=es&entry=ttu&g_ep=EgoyMDI2MDgxNi4wIKXMDSoASAFQAw%3D%3D",
+
+  "video_url": "/anunciantes/inmobiliaria_acosta/video.mp4",
+
+  "gallery": [
+    "/anunciantes/inmobiliaria_acosta/1.png",
+    "/anunciantes/inmobiliaria_acosta/2.png",
+    "/anunciantes/inmobiliaria_acosta/3.png",
+    "/anunciantes/inmobiliaria_acosta/4.png"
+  ],
+
+  "facebook": "https://www.facebook.com/profile.php?id=100063775702881&rdid=qnVuf9Uhp0rbnfKA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1jXgzn6suV%2F#",
+
+  "vivos": {
+    "ubicacion": { "activo": true },
+    "whatsapp": { "activo": true },
+    "carrusel": { "activo": true },
+    "video": { "activo": true },
+    "facebook": { "activo": true },
+    "oferta": { "activo": false },
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "71%",
+      "left": "3%",
+      "width": "13%"
+    },
+
+    "whatsapp": {
+      "top": "80%",
+      "left": "60%",
+      "width": "18%"
+    },
+
+    "carrusel": {
+      "top": "47%",
+      "left": "72%",
+      "width": "50%",
+      "transform": "translateX(-50%)"
+    },
+
+    "video": {
+      "top": "62%",
+      "left": "85%",
+      "width": "29%",
+      "transform": "translateX(-50%)"
+    },
+
+    "facebook": {
+      "top": "80%",
+      "left": "05%",
+      "width": "18%"
+    },
+
+    "volver": {
+      "top": "95%",
+      "left": "87%",
+      "width": "14%"
+    }
+  }
+}
