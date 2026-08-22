@@ -1,0 +1,69 @@
+{
+  "slug": "js_instalaciones",
+
+  "nombre": "JS",
+  "flyer": "/anunciantes/js_instalaciones/flyer.png",
+
+  "whatsapp": "51914412623",
+  "whatsappMessage": "Hola JS, vi su aviso en el Shopper Digital y requiero de sus servicios.",
+
+  "facebook": "https://www.facebook.com/jsinstalacionescomerciales/",
+  "tiktok": "https://www.tiktok.com/@serviciosjs",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true
+    },
+
+    "facebook": {
+      "activo": true
+    },
+
+    "tiktok": {
+      "activo": true
+    },
+
+    "email": {
+      "activo": true,
+      "email": "atencion.js@gmail.com",
+      "asunto": "Consulta desde El Shopper Digital",
+      "mensaje": "Hola JS, vi su aviso en el Shopper Digital y requiero de sus servicios."
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "83%",
+      "left": "24%",
+      "width": "16%"
+    },
+
+    "facebook": {
+      "top": "90%",
+      "left": "7%",
+      "width": "15%"
+    },
+
+    "tiktok": {
+      "top": "90%",
+      "left": "42%",
+      "width": "15%"
+    },
+
+    "email": {
+      "top": "90%",
+      "left": "67%",
+      "width": "14%"
+    },
+
+    "volver": {
+      "top": "93%",
+      "left": "86%",
+      "width": "14%"
+    }
+  }
+}
