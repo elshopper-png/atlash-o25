@@ -1,0 +1,71 @@
+{
+  "slug": "cori",
+
+  "nombre": "Clínica Cori",
+  "flyer": "/anunciantes/cori/flyer.png",
+
+  "whatsapp": "51979636580",
+  "whatsappMessage": "Hola Clínica Cori, vi su aviso en el Shopper Digital y necesito más información, gracias.",
+
+  "mapa_url": "https://www.google.com/maps/place/Av.+Carlos+Izaguirre+978,+Los+Olivos+15301/@-11.9902807,-77.0741072,17z/data=!4m6!3m5!1s0x9105ce5bf33e8db7:0xe7750fc79ee68f3e!8m2!3d-11.9910626!4d-77.0732489!16s%2Fg%2F11j1lpzfpg?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+
+  "video_url": "/anunciantes/cori/video.mp4",
+
+  "facebook": "https://www.facebook.com/profile.php?id=61552500124251",
+  "instagram": "https://www.instagram.com/Clinicacorisac",
+  "tiktok": "https://www.tiktok.com/@clinicacori_losolivos",
+
+  "vivos": {
+    "ubicacion": { "activo": true },
+    "whatsapp": { "activo": true },
+    "facebook": { "activo": true },
+    "instagram": { "activo": true },
+    "tiktok": { "activo": true },
+    "video": { "activo": true },
+    "volver": { "activo": true }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "52%",
+      "left": "3%",
+      "width": "14%"
+    },
+
+    "whatsapp": {
+      "top": "61%",
+      "left": "8%",
+      "width": "18%"
+    },
+
+    "facebook": {
+      "top": "61%",
+      "left": "31%",
+      "width": "18%"
+    },
+
+    "instagram": {
+      "top": "61%",
+      "left": "53%",
+      "width": "18%"
+    },
+
+    "tiktok": {
+      "top": "61%",
+      "left": "76%",
+      "width": "17%"
+    },
+
+    "video": {
+      "top": "72%",
+      "left": "73%",
+      "width": "28%"
+    },
+
+    "volver": {
+      "top": "93%",
+      "left": "85%",
+      "width": "14%"
+    }
+  }
+}
