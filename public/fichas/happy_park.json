@@ -1,0 +1,95 @@
+{
+  "slug": "happy_park",
+  "nombre": "Happy Park",
+  "flyer": "/anunciantes/happy_park/flyer.png",
+
+  "gallery": [
+    "/anunciantes/happy_park/01.jpg",
+    "/anunciantes/happy_park/02.jpg",
+    "/anunciantes/happy_park/03.jpg",
+    "/anunciantes/happy_park/04.jpg",
+    "/anunciantes/happy_park/05.jpg"
+  ],
+
+  "video_url": "/anunciantes/happy_park/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/HappyPark/@-11.9859139,-77.0635909,17z/data=!4m6!3m5!1s0x9105cffad3d97159:0xf8685c070f7d3792!8m2!3d-11.9859401!4d-77.062164!16s%2Fg%2F11p6_pcf_1?entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51902991519",
+      "mensaje": "Hola Happy Park, vi su aviso en el Shopper Digital y deseo más información de sus servicios infantiles, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/HappyParkoficial/"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/happyparkperu/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "53%",
+      "left": "7%",
+      "width": "11%"
+    },
+
+    "whatsapp": {
+      "top": "59%",
+      "left": "7%",
+      "width": "12%"
+    },
+
+    "facebook": {
+      "top": "65.9%",
+      "left": "7%",
+      "width": "12%"
+    },
+
+    "instagram": {
+      "top": "73%",
+      "left": "7%",
+      "width": "12%"
+    },
+
+    "carrusel": {
+      "top": "60%",
+      "left": "52%",
+      "width": "52%",
+      "transform": "translateX(-50%)"
+    },
+
+    "video": {
+      "top": "58.5%",
+      "left": "70%",
+      "width": "30%"
+    },
+
+    "volver": {
+      "top": "92.5%",
+      "left": "82%",
+      "width": "16%"
+    }
+  }
+}
