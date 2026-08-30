@@ -1,0 +1,45 @@
+{
+  "slug": "bush",
+  "nombre": "Mr. Bush",
+  "flyer": "/anunciantes/bush/flyer.png",
+
+  "gallery": [],
+
+  "video_url": "/anunciantes/bush/video.mp4",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51993490886",
+      "mensaje": "Hola, vi su aviso en el Shopper Digital y me interesa comprar un recoge popó."
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "video": {
+      "top": "38%",
+      "left": "31%",
+      "width": "25%"
+    },
+
+    "whatsapp": {
+      "top": "53%",
+      "left": "10%",
+      "width": "17%"
+    },
+
+    "volver": {
+      "top": "92.5%",
+      "left": "82%",
+      "width": "16%"
+    }
+  }
+}
