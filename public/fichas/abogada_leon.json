@@ -1,0 +1,81 @@
+{
+  "slug": "abogada_leon",
+  "nombre": "Abogada Marianela León Gavidia",
+  "rubro": "Servicios Profesionales",
+
+  "flyer": "/anunciantes/abogada_leon/flyer.png",
+
+  "whatsapp": "51993969103",
+  "whatsappMessage": "Hola doctora León, deseo reservar una cita legal, gracias.",
+
+  "mapa_url": "https://www.google.com/maps/place/Golondrinas+132,+Lima+15302/@-12.0043247,-77.0703805,17z/data=!4m6!3m5!1s0x9105cef0be191849:0x75f07b7b0ee009df!8m2!3d-12.0047602!4d-77.0691145!16s%2Fg%2F11fr664368?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
+
+  "video_url": "",
+  "gallery": [],
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51993969103",
+      "mensaje": "Hola doctora León, deseo reservar una cita legal, gracias."
+    },
+
+    "telefono1": {
+      "activo": true,
+      "numero": "015332734"
+    },
+
+    "email": {
+      "activo": true,
+      "email": "marianela_leon45@hotmail.com"
+    },
+
+    "carrusel": {
+      "activo": false
+    },
+
+    "video": {
+      "activo": false
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "42%",
+      "left": "5%",
+      "width": "15%"
+    },
+
+    "whatsapp": {
+      "top": "57%",
+      "left": "5%",
+      "width": "16%"
+    },
+
+    "telefono1": {
+      "top": "57%",
+      "left": "30%",
+      "width": "15%"
+    },
+
+    "email": {
+      "top": "67%",
+      "left": "15%",
+      "width": "17%"
+    },
+
+    "volver": {
+      "top": "92%",
+      "left": "81%",
+      "width": "16%"
+    }
+  }
+}
