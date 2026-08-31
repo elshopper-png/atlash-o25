@@ -1,0 +1,55 @@
+{
+  "slug": "animal_planet",
+  "nombre": "Animal Planet",
+  "flyer": "/anunciantes/animal_planet/flyer.png",
+
+  "mapa_url": "https://www.google.com/maps/place/Av.+Santiago+Antunez+de+Mayolo+1320,+Lima+15301/@-11.994732,-77.082025,17z/data=!4m6!3m5!1s0x9105ce5e2eaf0a17:0x4b4ed94f2548a9b3!8m2!3d-11.9950731!4d-77.0791068!16s%2Fg%2F11n9htrj3d?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true
+    },
+
+    "whatsapp1": {
+      "activo": true,
+      "numero": "51997822566",
+      "mensaje": "Hola Animal Planet, vi su anuncio en el Shopper Digital y deseo información sobre sus servicios veterinarios, gracias. 🐾"
+    },
+
+    "whatsapp2": {
+      "activo": true,
+      "numero": "51921978552",
+      "mensaje": "Hola Animal Planet, vi su anuncio en el Shopper Digital y deseo información sobre sus servicios veterinarios, gracias. 🐾"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "59%",
+      "left": "4%",
+      "width": "12%"
+    },
+
+    "whatsapp1": {
+      "top": "65%",
+      "left": "60%",
+      "width": "14%"
+    },
+
+    "whatsapp2": {
+      "top": "65%",
+      "left": "80%",
+      "width": "14%"
+    },
+
+    "volver": {
+      "top": "94%",
+      "left": "87%",
+      "width": "13%"
+    }
+  }
+}
