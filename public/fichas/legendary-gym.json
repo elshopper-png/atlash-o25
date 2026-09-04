@@ -1,0 +1,87 @@
+{
+  "slug": "legendary-gym",
+  "nombre": "Legendary Gym",
+  "flyer": "/anunciantes/legendary-gym/flyer.png",
+
+  "video_url": "/anunciantes/legendary-gym/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Legendary+Gym+Club+Fitness/@-11.9964407,-77.0849701,18z/data=!4m6!3m5!1s0x9105cf007098f62d:0x668d52a4dad06b92!8m2!3d-11.996648!4d-77.0843532!16s%2Fg%2F11lcm87v5l?entry=ttu&g_ep=EgoyMDI2MDgxNy4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51936033392",
+      "mensaje": "Hola Legendary Gym, vi su aviso en el Shopper Digital y deseo saber qué ofertas tienen, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/profile.php?id=61552556129734"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/legendary_fitclub/"
+    },
+
+    "tiktok": {
+      "activo": true,
+      "url": "https://www.tiktok.com/@legendaryfitclub"
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "73%",
+      "left": "9%",
+      "width": "13%"
+    },
+
+    "whatsapp": {
+      "top": "81%",
+      "left": "16%",
+      "width": "15%"
+    },
+
+    "facebook": {
+      "top": "90%",
+      "left": "9%",
+      "width": "14%"
+    },
+
+    "instagram": {
+      "top": "90%",
+      "left": "28%",
+      "width": "14%"
+    },
+
+    "tiktok": {
+      "top": "90%",
+      "left": "49%",
+      "width": "14%"
+    },
+
+    "video": {
+      "top": "77%",
+      "left": "67%",
+      "width": "25%"
+    },
+
+    "volver": {
+      "top": "93%",
+      "left": "82%",
+      "width": "14%"
+    }
+  }
+}
