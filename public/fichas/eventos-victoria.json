@@ -1,0 +1,95 @@
+{
+  "slug": "eventos-victoria",
+  "nombre": "Eventos Victoria",
+  "flyer": "/anunciantes/eventos-victoria/flyer.png",
+
+  "gallery": [
+    "/anunciantes/eventos-victoria/01.jpg",
+    "/anunciantes/eventos-victoria/02.jpg",
+    "/anunciantes/eventos-victoria/03.jpg",
+    "/anunciantes/eventos-victoria/04.jpg",
+    "/anunciantes/eventos-victoria/05.jpg"
+  ],
+
+  "video_url": "/anunciantes/eventos-victoria/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+Santiago+Antunez+de+Mayolo+1079,+Los+Olivos+15301/@-11.9980106,-77.0870842,15z/data=!4m6!3m5!1s0x9105ce5edbd54613:0x70fab6b5057f906b!8m2!3d-11.9949042!4d-77.0746173!16s%2Fg%2F11xtnfb0qt?entry=ttu&g_ep=EgoyMDI2MDgxNy4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51980689892",
+      "mensaje": "Hola Eventos Victoria, vi su anuncio en el Shopper Digital y quisiera me brinden información, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/VictoriaRecepcionesLO/"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/victoriaeventos.pe/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "62%",
+      "left": "6%",
+      "width": "15%"
+    },
+
+    "whatsapp": {
+      "top": "73%",
+      "left": "16%",
+      "width": "16%"
+    },
+
+    "facebook": {
+      "top": "73%",
+      "left": "42%",
+      "width": "16%"
+    },
+
+    "instagram": {
+      "top": "73%",
+      "left": "66%",
+      "width": "16%"
+    },
+
+    "carrusel": {
+      "top": "80%",
+      "left": "36%",
+      "width": "53%",
+      "transform": "translateX(-50%)"
+    },
+
+    "video": {
+      "top": "80%",
+      "left": "57%",
+      "width": "28%"
+    },
+
+    "volver": {
+      "top": "92.5%",
+      "left": "82%",
+      "width": "16%"
+    }
+  }
+}
