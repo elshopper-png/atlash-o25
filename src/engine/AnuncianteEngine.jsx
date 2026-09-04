@@ -107,31 +107,30 @@ localStorage.removeItem("O25R_RETURN");
   }, []);
 
   // 🧭 Cargar ficha desde /public/fichas
-  useEffect(() => {
-    const loadFicha = async () => {
-      try {
-        const url = `/fichas/${slug}.json`;
-        console.log("Cargando ficha desde:", url);
+useEffect(() => {
+  const loadFicha = async () => {
+    try {
+      const url = `/fichas/${slug}.json`;
 
-        const res = await fetch(url);
+      console.log("Cargando ficha desde:", url);
 
-        if (!res.ok) {
-          console.error("❌ No existe la ficha:", url);
-          setData(null);
-          return;
-        }
+      const res = await fetch(url);
 
-        const json = await res.json();
-
-setData(json);
-
-
-
-      } catch (err) {
-        console.error("❌ Error cargando ficha:", slug, err);
+      if (!res.ok) {
+        console.error("❌ No existe la ficha:", url);
         setData(null);
+        return;
       }
-    };
+
+      const json = await res.json();
+
+      setData(json);
+
+    } catch (err) {
+      console.error("❌ Error cargando ficha:", slug, err);
+      setData(null);
+    }
+  };
 
     loadFicha();
   }, [slug]);
@@ -154,7 +153,7 @@ setData(json);
 
 const canal =
   CANALES_SHOPPER[key] ||
-  CANALES_SHOPPER[claveBase];
+  CANALES_SHOPPER[claveBase];const url = `/fichas/${slug}.json`;
 
   if (!canal || !data?.nombre) {
     return false;

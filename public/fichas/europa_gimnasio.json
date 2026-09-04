@@ -1,0 +1,94 @@
+{
+  "slug": "europa_gimnasio",
+  "nombre": "Europa Gym",
+  "flyer": "/anunciantes/europa_gimnasio/flyer.png",
+
+  "gallery": [
+    "/anunciantes/europa_gimnasio/01.jpg",
+    "/anunciantes/europa_gimnasio/02.jpg",
+    "/anunciantes/europa_gimnasio/03.jpg",
+    "/anunciantes/europa_gimnasio/04.jpg"
+  ],
+
+  "video_url": "/anunciantes/europa_gimnasio/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/EUROPA+GYM/@-11.9582703,-77.0798226,16z/data=!4m10!1m2!2m1!1sAv.+Central+Mz+81,+Lt+14,+2%C2%B0+piso+!3m6!1s0x9105cf48a5aafd7d:0x6a155aa43c5c8019!8m2!3d-11.957714!4d-77.0789214!15sCiJBdi4gQ2VudHJhbCBNeiA4MSwgTHQgMTQsIDLCsCBwaXNvkgEDZ3lt4AEA!16s%2Fg%2F11l5gl7g39?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51986107299",
+      "mensaje": "Hola gimnasio Europa, vi su aviso en el Shopper Digital y requiero más información, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/EuropaGym365/"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/europagym365/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "74%",
+      "left": "4%",
+      "width": "13%"
+    },
+
+    "whatsapp": {
+      "top": "81%",
+      "left": "16%",
+      "width": "14%"
+    },
+
+    "facebook": {
+      "top": "90%",
+      "left": "7%",
+      "width": "12%"
+    },
+
+    "instagram": {
+      "top": "90%",
+      "left": "23%",
+      "width": "12%"
+    },
+
+    "carrusel": {
+      "top": "79%",
+      "left": "79%",
+      "width": "45%",
+      "transform": "translateX(-50%)"
+    },
+
+    "video": {
+      "top": "79%",
+      "left": "35%",
+      "width": "25%"
+    },
+
+    "volver": {
+      "top": "92.5%",
+      "left": "82%",
+      "width": "16%"
+    }
+  }
+}
