@@ -1,0 +1,94 @@
+{
+  "slug": "gilvonio-belleza",
+  "nombre": "Gilvonio",
+  "flyer": "/anunciantes/gilvonio-belleza/flyer.png",
+
+  "gallery": [
+    "/anunciantes/gilvonio-belleza/01.jpg",
+    "/anunciantes/gilvonio-belleza/02.jpg",
+    "/anunciantes/gilvonio-belleza/03.jpg",
+    "/anunciantes/gilvonio-belleza/04.jpg"
+  ],
+
+  "video_url": "/anunciantes/gilvonio-belleza/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Geminis+1114,+Los+Olivos+15301/@-11.9955073,-77.0762118,17z/data=!4m6!3m5!1s0x9105ce5f2005a897:0x27bc02c099dcdf4f!8m2!3d-11.9953132!4d-77.0751175!16s%2Fg%2F11rnc2xn65?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51923185254",
+      "mensaje": "Hola Gilvonio, vi su aviso en el Shopper Digital y quisiera me brinden información de sus ofertas vigentes, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/gilvonioetudiodebelleza/"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/estudiogilvoniogilvonio/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+  "ubicacion": {
+    "top": "65%",
+    "left": "6%",
+    "width": "13%"
+  },
+
+  "whatsapp": {
+    "top": "65%",
+    "left": "77%",
+    "width": "16%"
+  },
+
+  "facebook": {
+    "top": "74%",
+    "left": "5%",
+    "width": "15%"
+  },
+
+  "instagram": {
+    "top": "84%",
+    "left": "6%",
+    "width": "15%"
+  },
+
+  "carrusel": {
+    "top": "73%",
+    "left": "53%",
+    "width": "50%",
+    "transform": "translateX(-50%)"
+  },
+
+  "video": {
+    "top": "72%",
+    "left": "70%",
+    "width": "30%"
+  },
+
+  "volver": {
+    "top": "94%",
+    "left": "84%",
+    "width": "13%"
+  }
+}
+}
