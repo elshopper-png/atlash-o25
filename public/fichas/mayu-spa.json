@@ -1,0 +1,101 @@
+{
+  "slug": "mayu-spa",
+  "nombre": "MaYu Spa",
+  "flyer": "/anunciantes/mayu-spa/flyer.png",
+
+  "gallery": [
+    "/anunciantes/mayu-spa/01.jpg",
+    "/anunciantes/mayu-spa/02.jpg",
+    "/anunciantes/mayu-spa/03.jpg",
+    "/anunciantes/mayu-spa/04.jpg",
+    "/anunciantes/mayu-spa/05.jpg"
+  ],
+
+  "video_url": "/anunciantes/mayu-spa/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/MaYu+Spa/@-12.0055733,-77.0662692,19z/data=!4m6!3m5!1s0x9105cfa1644ae8d5:0xa3d076fdc70fdfb7!8m2!3d-12.0057294!4d-77.0657944!16s%2Fg%2F11rtvd24k0?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51922132053",
+      "mensaje": "Hola, MaYu SPA, vi su anuncio en el Shopper Digital y deseo saber qué ofertas tienen, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/mayuspaa/"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/mayuspaa/?hl=es-la"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "carrusel": {
+      "top": "43%",
+      "left": "31%",
+      "width": "41%",
+      "height": "16%"
+    },
+
+    "ubicacion": {
+      "top": "75%",
+      "left": "11%",
+      "width": "11%",
+      "height": "7%"
+    },
+
+    "video": {
+      "top": "79%",
+      "left": "5%",
+      "width": "30%",
+      "height": "14%"
+    },
+
+    "whatsapp": {
+      "top": "82%",
+      "left": "78%",
+      "width": "17%",
+      "height": "10%"
+    },
+
+    "facebook": {
+      "top": "90%",
+      "left": "39%",
+      "width": "16%",
+      "height": "9%"
+    },
+
+    "instagram": {
+      "top": "90%",
+      "left": "62%",
+      "width": "16%",
+      "height": "9%"
+    },
+
+    "volver": {
+      "top": "93%",
+      "left": "84%",
+      "width": "13%",
+      "height": "4%"
+    }
+  }
+}
