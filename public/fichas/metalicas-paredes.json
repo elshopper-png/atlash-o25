@@ -1,0 +1,113 @@
+{
+  "slug": "metalicas-paredes",
+  "nombre": "Metálicas Paredes Perú",
+  "flyer": "/anunciantes/metalicas-paredes/flyer.png",
+
+  "gallery": [
+    "/anunciantes/metalicas-paredes/01.jpg",
+    "/anunciantes/metalicas-paredes/02.jpg",
+    "/anunciantes/metalicas-paredes/03.jpg",
+    "/anunciantes/metalicas-paredes/04.jpg",
+    "/anunciantes/metalicas-paredes/05.jpg"
+  ],
+
+  "video_url": "/anunciantes/metalicas-paredes/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Met%C3%A1licas+Paredes+Per%C3%BA/@-11.9743092,-77.077449,17z/data=!4m6!3m5!1s0x9105cf0b5a2319f5:0xd6b9ac2f7a483fc9!8m2!3d-11.9743947!4d-77.0766881!16s%2Fg%2F11qs9qxy6w?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51946091550",
+      "mensaje": "Hola Metálicas Paredes Perú, vi su anuncio en el Shopper Digital y deseo un presupuesto, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/MetalicasParedesPeru"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/metalicasparedesperu_/"
+    },
+
+    "tiktok": {
+      "activo": true,
+      "url": "https://www.tiktok.com/@metalicasparedesperu"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "64%",
+      "left": "5%",
+      "width": "15%",
+      "height": "8%"
+    },
+
+    "whatsapp": {
+      "top": "75%",
+      "left": "7%",
+      "width": "16%",
+      "height": "9%"
+    },
+
+    "facebook": {
+      "top": "75%",
+      "left": "31%",
+      "width": "16%",
+      "height": "9%"
+    },
+
+    "instagram": {
+      "top": "75%",
+      "left": "56%",
+      "width": "16%",
+      "height": "9%"
+    },
+
+    "tiktok": {
+      "top": "75%",
+      "left": "80%",
+      "width": "15%",
+      "height": "9%"
+    },
+
+    "carrusel": {
+      "top": "82%",
+      "left": "12%",
+      "width": "49%",
+      "height": "13%"
+    },
+
+    "video": {
+      "top": "82%",
+      "left": "60%",
+      "width": "23%",
+      "height": "13%"
+    },
+
+    "volver": {
+      "top": "92%",
+      "left": "85%",
+      "width": "11%",
+      "height": "4%"
+    }
+  }
+}
