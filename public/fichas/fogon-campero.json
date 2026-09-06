@@ -1,0 +1,101 @@
+{
+  "slug": "fogon-campero",
+  "nombre": "El Fogón Campero",
+  "flyer": "/anunciantes/fogon-campero/flyer.png",
+
+  "gallery": [
+    "/anunciantes/fogon-campero/01.jpg",
+    "/anunciantes/fogon-campero/02.jpg",
+    "/anunciantes/fogon-campero/03.jpg",
+    "/anunciantes/fogon-campero/04.jpg",
+    "/anunciantes/fogon-campero/05.jpg"
+  ],
+
+  "video_url": "/anunciantes/fogon-campero/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/El+Fog%C3%B3n+Campero+Pollos+a+la+Brasa+y+Parrillas/@-11.9793039,-77.0735697,18z/data=!4m10!1m2!2m1!1spollria+los+olivos!3m6!1s0x9105cfd2b8b9b283:0xdaa75ca4c968a68b!8m2!3d-11.9796735!4d-77.0725671!15sChNwb2xsZXJpYSBsb3Mgb2xpdm9zWhUiE3BvbGxlcmlhIGxvcyBvbGl2b3OSARJjaGlja2VuX3Jlc3RhdXJhbnSaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRTVldJeVJtdFdSbWhLWVZWc2QwNVlVbWhPYmxKWFkwVTVNbE5YWXhBQuABAPoBBAgAEDY!16s%2Fg%2F11r1h3bc52?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51965935701",
+      "mensaje": "Hola Fogón Campero, vi su anuncio en el Shopper Digital y quisiera hacer un pedido."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/elfogoncampero/"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/elfogoncampero"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "67%",
+      "left": "24%",
+      "width": "18%",
+      "height": "9%"
+    },
+
+    "ubicacion": {
+      "top": "76%",
+      "left": "3%",
+      "width": "13%",
+      "height": "8%"
+    },
+
+    "video": {
+      "top": "81%",
+      "left": "1%",
+      "width": "27%",
+      "height": "13%"
+    },
+
+    "carrusel": {
+      "top": "81%",
+      "left": "24%",
+      "width": "50%",
+      "height": "14%"
+    },
+
+    "facebook": {
+      "top": "83%",
+      "left": "73%",
+      "width": "15%",
+      "height": "8%"
+    },
+
+    "instagram": {
+      "top": "91%",
+      "left": "73%",
+      "width": "15%",
+      "height": "8%"
+    },
+
+    "volver": {
+      "top": "95%",
+      "left": "91%",
+      "width": "9%",
+      "height": "4%"
+    }
+  }
+}
