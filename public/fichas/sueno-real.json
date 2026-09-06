@@ -1,0 +1,102 @@
+{
+  "slug": "sueno-real",
+  "nombre": "Sueño Real Eventos",
+  "flyer": "/anunciantes/sueno-real/flyer.png",
+
+  "gallery": [
+    "/anunciantes/sueno-real/01.jpg",
+    "/anunciantes/sueno-real/02.jpg",
+    "/anunciantes/sueno-real/03.jpg",
+    "/anunciantes/sueno-real/04.jpg",
+    "/anunciantes/sueno-real/05.jpg",
+    "/anunciantes/sueno-real/06.jpg"
+  ],
+
+  "video_url": "/anunciantes/sueno-real/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Sue%C3%B1o+Real+Eventos/@-11.9839257,-77.0719618,16z/data=!4m10!1m2!2m1!1seventos+los+olivos!3m6!1s0x9105cfbab2bb2af5:0xf1a5fa038ed2a685!8m2!3d-11.9848181!4d-77.0719094!15sChJldmVudG9zIGxvcyBvbGl2b3NaFCISZXZlbnRvcyBsb3Mgb2xpdm9zkgEGbG91bmdlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJ3Ym5SSU5HTjNFQUXgAQD6AQQIABBD!16s%2Fg%2F11fhy1d2rn?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51950436277",
+      "mensaje": "Hola Sueño Real Eventos, vi su anuncio en el Shopper Digital y necesito de sus servicios."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/EventosOlivos"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/srealeventoss/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "57%",
+      "left": "35%",
+      "width": "16%",
+      "height": "9%"
+    },
+
+    "carrusel": {
+      "top": "64.5%",
+      "left": "4%",
+      "width": "40%",
+      "height": "13%"
+    },
+
+    "video": {
+      "top": "67%",
+      "left": "38%",
+      "width": "26%",
+      "height": "13%"
+    },
+
+    "facebook": {
+      "top": "80%",
+      "left": "6%",
+      "width": "14%",
+      "height": "9%"
+    },
+
+    "instagram": {
+      "top": "80%",
+      "left": "25%",
+      "width": "14%",
+      "height": "9%"
+    },
+
+    "ubicacion": {
+      "top": "89%",
+      "left": "8%",
+      "width": "15%",
+      "height": "9%"
+    },
+
+    "volver": {
+      "top": "93%",
+      "left": "86%",
+      "width": "12%",
+      "height": "4%"
+    }
+  }
+}
