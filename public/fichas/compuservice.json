@@ -1,0 +1,76 @@
+{
+  "slug": "compuservice",
+  "nombre": "Compuservice",
+  "flyer": "/anunciantes/compuservice/flyer.png",
+
+  "gallery": [
+    "/anunciantes/compuservice/01.jpg",
+    "/anunciantes/compuservice/02.jpg",
+    "/anunciantes/compuservice/03.jpg",
+    "/anunciantes/compuservice/04.jpg",
+    "/anunciantes/compuservice/05.jpg"
+  ],
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/COMPUSERVICE+SAC/@-11.9685304,-77.0818336,16z/data=!4m10!1m2!2m1!1sservicio+tecnico+computadoras+los+olivos!3m6!1s0x9105ce3df080d95f:0x3fdd5c0b7cd958ef!8m2!3d-11.9696006!4d-77.0789158!15sCihzZXJ2aWNpbyB0ZWNuaWNvIGNvbXB1dGFkb3JhcyBsb3Mgb2xpdm9zWioiKHNlcnZpY2lvIHRlY25pY28gY29tcHV0YWRvcmFzIGxvcyBvbGl2b3OSAQ5jb21wdXRlcl9zdG9yZeABAA!16s%2Fg%2F11f2wbwpkc?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51966740882",
+      "mensaje": "Hola Compuservice, vi su anuncio en el Shopper Digital y requiero de sus servicios informáticos."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/compuservicesac/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "80%",
+      "left": "15%",
+      "width": "13%",
+      "height": "9%"
+    },
+
+    "whatsapp": {
+      "top": "89%",
+      "left": "10%",
+      "width": "16%",
+      "height": "10%"
+    },
+
+    "facebook": {
+      "top": "89%",
+      "left": "32%",
+      "width": "16%",
+      "height": "10%"
+    },
+
+    "carrusel": {
+      "top": "86%",
+      "left": "53%",
+      "width": "37%",
+      "height": "12%"
+    },
+
+    "volver": {
+      "top": "94%",
+      "left": "89%",
+      "width": "9%",
+      "height": "5%"
+    }
+  }
+}
