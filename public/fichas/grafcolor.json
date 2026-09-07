@@ -1,0 +1,89 @@
+{
+  "slug": "grafcolor",
+  "nombre": "Grafcolor",
+  "flyer": "/anunciantes/grafcolor/flyer.png",
+
+  "gallery": [
+    "/anunciantes/grafcolor/01.jpg",
+    "/anunciantes/grafcolor/02.jpg",
+    "/anunciantes/grafcolor/03.jpg",
+    "/anunciantes/grafcolor/04.jpg",
+    "/anunciantes/grafcolor/05.jpg"
+  ],
+
+  "video_url": "/anunciantes/grafcolor/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/GIGANTOGRAFIAS+FyP+GRAFCOLOR/@-12.0083832,-77.0604765,18z/data=!4m10!1m2!2m1!1sGigantografias+san+martin+de+porres!3m6!1s0x9105cf690d9c7f49:0xc8d218b52dcd4ab!8m2!3d-12.0083733!4d-77.0597145!15sCiNHaWdhbnRvZ3JhZmlhcyBzYW4gbWFydGluIGRlIHBvcnJlc1olIiNnaWdhbnRvZ3JhZmlhcyBzYW4gbWFydGluIGRlIHBvcnJlc5IBEmFkdmVydGlzaW5nX2FnZW5jeeABAA!16s%2Fg%2F11qm387ft4?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51944723727",
+      "mensaje": "Hola Grafcolor, vi su aviso en el Shopper Digital y necesito más información."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/gigantografiasfypgrafcolor"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "65%",
+      "left": "4%",
+      "width": "17%",
+      "height": "10%"
+    },
+
+    "whatsapp": {
+      "top": "74%",
+      "left": "43%",
+      "width": "18%",
+      "height": "10%"
+    },
+
+    "facebook": {
+      "top": "85%",
+      "left": "6%",
+      "width": "20%",
+      "height": "11%"
+    },
+
+    "video": {
+      "top": "81%",
+      "left": "26%",
+      "width": "26%",
+      "height": "14%"
+    },
+
+    "carrusel": {
+      "top": "82%",
+      "left": "53%",
+      "width": "40%",
+      "height": "15%"
+    },
+
+    "volver": {
+      "top": "95%",
+      "left": "88%",
+      "width": "9%",
+      "height": "5%"
+    }
+  }
+}
