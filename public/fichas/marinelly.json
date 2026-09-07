@@ -1,0 +1,90 @@
+{
+  "slug": "marinelly",
+  "nombre": "Calzados Marinelly",
+  "flyer": "/anunciantes/marinelly/flyer.png",
+
+  "gallery": [
+    "/anunciantes/marinelly/01.jpg",
+    "/anunciantes/marinelly/02.jpg",
+    "/anunciantes/marinelly/03.jpg",
+    "/anunciantes/marinelly/04.jpg",
+    "/anunciantes/marinelly/05.jpg",
+    "/anunciantes/marinelly/06.jpg"
+  ],
+
+  "video_url": "/anunciantes/marinelly/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Calzados+Marinelly+(elaborado+por+manos+peruanas)/@-11.9947255,-77.0761326,18z/data=!4m10!1m2!2m1!1szapateria+Los+Olivos!3m6!1s0x9105cf84718de383:0xc3b20f751c8f11b4!8m2!3d-11.994736!4d-77.07499!15sChR6YXBhdGVyaWEgTG9zIE9saXZvc1oWIhR6YXBhdGVyaWEgbG9zIG9saXZvc5IBCmJvb3Rfc3RvcmXgAQA!16s%2Fg%2F11hzx4_t4y?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51965833743",
+      "mensaje": "Hola Calzados Marinnely, vi su aviso en el Shopper Digital y quisiera información de sus modelos de calzado, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/calzadosmarinelly"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "carrusel": {
+      "top": "49%",
+      "left": "55%",
+      "width": "47%",
+      "height": "14%"
+    },
+
+    "ubicacion": {
+      "top": "78%",
+      "left": "6%",
+      "width": "14%",
+      "height": "10%"
+    },
+
+    "whatsapp": {
+      "top": "86%",
+      "left": "9%",
+      "width": "20%",
+      "height": "11%"
+    },
+
+    "facebook": {
+      "top": "86%",
+      "left": "38%",
+      "width": "20%",
+      "height": "11%"
+    },
+
+    "video": {
+      "top": "82%",
+      "left": "64%",
+      "width": "24%",
+      "height": "14%"
+    },
+
+    "volver": {
+      "top": "94%",
+      "left": "87%",
+      "width": "12%",
+      "height": "5%"
+    }
+  }
+}
