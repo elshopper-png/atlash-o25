@@ -1,0 +1,101 @@
+{
+  "slug": "soleil-beauty",
+  "nombre": "Soleil Beauty Spa",
+  "flyer": "/anunciantes/soleil-beauty/flyer.png",
+
+  "gallery": [
+    "/anunciantes/soleil-beauty/01.jpg",
+    "/anunciantes/soleil-beauty/02.jpg",
+    "/anunciantes/soleil-beauty/03.jpg",
+    "/anunciantes/soleil-beauty/04.jpg",
+    "/anunciantes/soleil-beauty/05.jpg"
+  ],
+
+  "video_url": "/anunciantes/soleil-beauty/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Soleil+beauty+spa/@-11.9936911,-77.0807943,17z/data=!4m10!1m2!2m1!1sbeauty+los+olivos!3m6!1s0x9105cf5163c5f3f7:0x7f13132de786fa9d!8m2!3d-11.9938959!4d-77.0795713!15sChFiZWF1dHkgbG9zIG9saXZvc5IBDWV5ZWxhc2hfc2Fsb27gAQA!16s%2Fg%2F11z3585nh_?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51933153549",
+      "mensaje": "Hola Soleil Beauty, vi su anuncio en el Shopper Digital y quisiera me puedan brindar más información de sus servicios, gracias."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/profile.php/?id=61580270463618"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/soleilbeautyspa20/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "63.5%",
+      "left": "13%",
+      "width": "17%",
+      "height": "9%"
+    },
+
+    "whatsapp": {
+      "top": "75%",
+      "left": "18%",
+      "width": "17%",
+      "height": "9%"
+    },
+
+    "facebook": {
+      "top": "75%",
+      "left": "44%",
+      "width": "17%",
+      "height": "9%"
+    },
+
+    "instagram": {
+      "top": "75%",
+      "left": "70%",
+      "width": "17%",
+      "height": "9%"
+    },
+
+    "video": {
+      "top": "84%",
+      "left": "15%",
+      "width": "23%",
+      "height": "14%"
+    },
+
+    "carrusel": {
+      "top": "84%",
+      "left": "39%",
+      "width": "42%",
+      "height": "14%"
+    },
+
+    "volver": {
+      "top": "92%",
+      "left": "84%",
+      "width": "13%",
+      "height": "5%"
+    }
+  }
+}
