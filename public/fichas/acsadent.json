@@ -1,0 +1,102 @@
+{
+  "slug": "acsadent",
+  "nombre": "ACSA Dent",
+  "flyer": "/anunciantes/acsadent/flyer.png",
+
+  "gallery": [
+    "/anunciantes/acsadent/01.jpg",
+    "/anunciantes/acsadent/02.jpg",
+    "/anunciantes/acsadent/03.jpg",
+    "/anunciantes/acsadent/04.jpg",
+    "/anunciantes/acsadent/05.jpg",
+    "/anunciantes/acsadent/06.jpg"
+  ],
+
+  "video_url": "/anunciantes/acsadent/video.mp4",
+
+  "vivos": {
+    "ubicacion": {
+      "activo": true,
+      "url": "https://www.google.com/maps/place/Av.+Carlos+Izaguirre+1304,+Los+Olivos+15301/@-11.9911537,-77.0805233,17z/data=!4m6!3m5!1s0x9105ce5deb68d91f:0xbe3f2d6278620ba7!8m2!3d-11.9912744!4d-77.0783239!16s%2Fg%2F11csg6bw9s?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+    },
+
+    "telefono1": {
+      "activo": true,
+      "numero": "014858533"
+    },
+
+    "whatsapp": {
+      "activo": true,
+      "numero": "51910049118",
+      "mensaje": "Hola Clínica Acsa, vi su aviso en el Shopper Digital y quisiera reservar una cita."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/ClinicaOdontologicaAcsaDent/"
+    },
+
+    "carrusel": {
+      "activo": true
+    },
+
+    "video": {
+      "activo": true
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "ubicacion": {
+      "top": "52%",
+      "left": "7%",
+      "width": "13%",
+      "height": "9%"
+    },
+
+    "telefono1": {
+      "top": "62%",
+      "left": "57%",
+      "width": "13%",
+      "height": "9%"
+    },
+
+    "whatsapp": {
+      "top": "62%",
+      "left": "77%",
+      "width": "15%",
+      "height": "9%"
+    },
+
+    "carrusel": {
+      "top": "67%",
+      "left": "58%",
+      "width": "42%",
+      "height": "20%"
+    },
+
+    "video": {
+      "top": "81%",
+      "left": "52%",
+      "width": "27%",
+      "height": "14%"
+    },
+
+    "facebook": {
+      "top": "86%",
+      "left": "78%",
+      "width": "16%",
+      "height": "12%"
+    },
+
+    "volver": {
+      "top": "94%",
+      "left": "88%",
+      "width": "9%",
+      "height": "5%"
+    }
+  }
+}
