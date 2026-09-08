@@ -1,0 +1,70 @@
+{
+  "slug": "cortinas-lichita",
+  "nombre": "Cortinas Lichita",
+  "flyer": "/anunciantes/cortinas-lichita/flyer.png",
+
+  "vivos": {
+    "whatsapp1": {
+      "activo": true,
+      "numero": "51932757828",
+      "mensaje": "Hola Cortinas Lichita, vi su anuncio en el Shopper Digital y quisiera información."
+    },
+
+    "whatsapp2": {
+      "activo": true,
+      "numero": "51960216139",
+      "mensaje": "Hola Cortinas Lichita, vi su anuncio en el Shopper Digital y quisiera información."
+    },
+
+    "facebook": {
+      "activo": true,
+      "url": "https://www.facebook.com/profile.php?id=61564533086257&mibextid=ZbWKwL&utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+    },
+
+    "instagram": {
+      "activo": true,
+      "url": "https://www.instagram.com/cortinaslichita/"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp1": {
+      "top": "61%",
+      "left": "50%",
+      "width": "16%",
+      "height": "9%"
+    },
+
+    "whatsapp2": {
+      "top": "61%",
+      "left": "74%",
+      "width": "16%",
+      "height": "9%"
+    },
+
+    "facebook": {
+      "top": "90%",
+      "left": "31%",
+      "width": "15%",
+      "height": "7%"
+    },
+
+    "instagram": {
+      "top": "90%",
+      "left": "53%",
+      "width": "15%",
+      "height": "7%"
+    },
+
+    "volver": {
+      "top": "92%",
+      "left": "82%",
+      "width": "13%",
+      "height": "5%"
+    }
+  }
+}
