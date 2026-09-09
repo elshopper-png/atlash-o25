@@ -1,0 +1,45 @@
+{
+  "slug": "servicios-inmobiliarios",
+  "nombre": "Servicios Inmobiliarios",
+  "flyer": "/anunciantes/servicios-inmobiliarios/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51997118777",
+      "mensaje": "Hola Servicios Inmobiliarios, vi su aviso en el Shopper Digital y quisiera más información de sus servicios."
+    },
+
+    "email": {
+      "activo": true,
+      "email": "leons.christian@gmail.com"
+    },
+
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "84%",
+      "left": "43%",
+      "width": "20%",
+      "height": "10%"
+    },
+
+    "email": {
+      "top": "83%",
+      "left": "72%",
+      "width": "18%",
+      "height": "10%"
+    },
+
+    "volver": {
+      "top": "94%",
+      "left": "87%",
+      "width": "11%",
+      "height": "5%"
+    }
+  }
+}
