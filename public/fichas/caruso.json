@@ -1,0 +1,31 @@
+{
+  "slug": "caruso",
+  "nombre": "Profesor Jorge Velásquez",
+  "flyer": "/anunciantes/caruso/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51977735224",
+      "mensaje": "Hola profesor Jorge Velásquez, tengo interés en sus clases de música, ¿puede brindarme más información? Gracias."
+    },
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "82%",
+      "left": "45%",
+      "width": "18%",
+      "height": "10%"
+    },
+    "volver": {
+      "top": "94%",
+      "left": "86%",
+      "width": "12%",
+      "height": "5%"
+    }
+  }
+}
