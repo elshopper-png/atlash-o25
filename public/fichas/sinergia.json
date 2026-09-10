@@ -1,0 +1,31 @@
+{
+  "slug": "sinergia",
+  "nombre": "Sinergia",
+  "flyer": "/anunciantes/sinergia/flyer.png",
+
+  "vivos": {
+    "whatsapp": {
+      "activo": true,
+      "numero": "51971193302",
+      "mensaje": "Hola Sinergia, vi su aviso en el Shopper Digital y necesito más información de sus servicios digitales."
+    },
+    "volver": {
+      "activo": true
+    }
+  },
+
+  "vivosMap": {
+    "whatsapp": {
+      "top": "84.3%",
+      "left": "13%",
+      "width": "20%",
+      "height": "15%"
+    },
+    "volver": {
+      "top": "91%",
+      "left": "83%",
+      "width": "15%",
+      "height": "5%"
+    }
+  }
+}
