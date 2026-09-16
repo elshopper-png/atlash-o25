@@ -10,7 +10,11 @@ export default function VivoCarrusel({ style, onClick, data }) {
   }
 
   return (
-    <button className="o25-vivo" style={style} onClick={onClick}>
+    <button
+      className="o25-vivo o25-latido"
+      style={style}
+      onClick={onClick}
+    >
       <img src={iconPath("carrusel")} alt="Carrusel" />
     </button>
   );

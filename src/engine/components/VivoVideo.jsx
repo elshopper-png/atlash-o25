@@ -61,7 +61,7 @@ export default function VivoVideo({
   return (
     <button
       type="button"
-      className="o25-vivo"
+      className="o25-vivo o25-latido"
       style={style}
       onClick={handleClick}
       aria-label="Abrir video"
