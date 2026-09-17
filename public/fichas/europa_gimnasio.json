@@ -73,9 +73,9 @@
     },
 
     "carrusel": {
-      "top": "79%",
+      "top": "80%",
       "left": "79%",
-      "width": "45%",
+      "width": "39%",
       "transform": "translateX(-50%)"
     },
 

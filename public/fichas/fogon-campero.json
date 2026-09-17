@@ -64,16 +64,16 @@
     },
 
     "video": {
-      "top": "81%",
+      "top": "83%",
       "left": "1%",
-      "width": "27%",
+      "width": "22%",
       "height": "13%"
     },
 
     "carrusel": {
-      "top": "81%",
-      "left": "24%",
-      "width": "50%",
+      "top": "83%",
+      "left": "26%",
+      "width": "42%",
       "height": "14%"
     },
 

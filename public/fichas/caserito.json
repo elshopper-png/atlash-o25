@@ -51,11 +51,11 @@
 
     "oferta": {
       "top": "42%",
-      "left": "2%",
+      "left": "20%",
       "width": "50%",
       "transform": "translateX(-50%)"
     },
 
-    "volver": { "top": "95%", "left": "85%", "width": "16%" }
+    "volver": { "top": "93%", "left": "85%", "width": "16%" }
   }
 }

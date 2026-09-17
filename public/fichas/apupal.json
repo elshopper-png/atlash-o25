@@ -75,8 +75,8 @@
 
     "carrusel": { "top": "22%", "left": "77%", "width": "46%", "transform": "translateX(-50%)" },
 
-    "video": { "top": "86%", "left": "65.4%", "width": "20%" },
-    "video1": { "top": "70%", "left": "13%", "width": "19%" },
+    "video": { "top": "86%", "left": "65.4%", "width": "18%" },
+    "video1": { "top": "70%", "left": "13%", "width": "17%" },
 
     "oferta": { "top": "52%", "left": "45%", "width": "60%", "transform": "translate(-50%, -50%)" },
 

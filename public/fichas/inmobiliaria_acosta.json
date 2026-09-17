@@ -44,16 +44,16 @@
     },
 
     "carrusel": {
-      "top": "47%",
-      "left": "72%",
-      "width": "50%",
+      "top": "48%",
+      "left": "74%",
+      "width": "48%",
       "transform": "translateX(-50%)"
     },
 
     "video": {
-      "top": "62%",
-      "left": "85%",
-      "width": "29%",
+      "top": "65%",
+      "left": "74%",
+      "width": "23%",
       "transform": "translateX(-50%)"
     },
 

@@ -49,12 +49,12 @@
     "ubicacion": { "top": "78%", "left": "2%", "width": "12%" },
     "whatsapp": { "top": "78%", "left": "84%", "width": "12%" },
 
-    "facebook": { "top": "90%", "left": "51%", "width": "12%" },
+    "facebook": { "top": "90%", "left": "49%", "width": "12%" },
 
     "carrusel": {
-      "top": "83%",
+      "top": "85%",
       "left": "26%",
-      "width": "46%",
+      "width": "40%",
       "transform": "translateX(-50%)"
     },
 

@@ -42,9 +42,9 @@
     "whatsapp": { "top": "82%", "left": "58%", "width": "12%" },
 
     "carrusel": {
-      "top": "79%",
-      "left": "29%",
-      "width": "55%",
+      "top": "81%",
+      "left": "31%",
+      "width": "50%",
       "transform": "translateX(-50%)"
     },
 
