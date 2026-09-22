@@ -41,44 +41,6 @@ export function MapaVivosO25(data) {
     return zonas;
   }
 
-  // ============================================================
-  // 🟥 2) MODELO ANTIGUO — Saúl Garrido (NO TOCAR)
-  // ============================================================
-  if (slug === "saul-garrido") {
-    return {
-      ubicacion: vivos.ubicacion?.activo
-        ? { top: "63%", left: "10%", width: "11%" }
-        : null,
-
-      whatsapp: vivos.whatsapp?.activo
-        ? { top: "63%", left: "78%", width: "11%" }
-        : null,
-
-      carrusel: vivos.carrusel?.activo
-        ? {
-            top: "67%",
-            left: "26%",
-            width: "49%",
-            transform: "translateX(-50%)",
-          }
-        : null,
-
-      video: vivos.video?.activo
-        ? {
-            top: "67%",
-            left: "60%",
-            width: "26%",
-            transform: "translateX(-50%)",
-          }
-        : null,
-
-      oferta: vivos.oferta?.activo
-        ? { top: "79%", left: "60%", width: "20%" }
-        : null,
-
-      volver: { top: "92.5%", left: "82%", width: "16%" },
-    };
-  }
 
   // ============================================================
   // 🟪 3) MODELO ANTIGUO — Burga (NO TOCAR)
