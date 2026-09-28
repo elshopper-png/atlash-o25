@@ -9,11 +9,13 @@
     "/anunciantes/saul/02.png",
     "/anunciantes/saul/03.png",
     "/anunciantes/saul/04.jpg",
-    "/anunciantes/saul/05.png",
-    "/anunciantes/saul/06.jpg"
+    "/anunciantes/saul/05.png"
   ],
 
   "video_url": "/anunciantes/saul/video.mp4",
+
+  "facebook": "https://www.facebook.com/profile.php?id=100085952199132",
+  "web": "https://doctorsaulgarrido.wixsite.com/inicio",
 
   "vivos": {
     "ubicacion": {
@@ -35,6 +37,14 @@
       "activo": true
     },
 
+    "facebook": {
+      "activo": true
+    },
+
+    "web": {
+      "activo": true
+    },
+
     "oferta": {
       "activo": false
     },
@@ -47,29 +57,43 @@
   "vivosMap": {
     "ubicacion": {
       "top": "66%",
-      "left": "54%",
+      "left": "55%",
       "width": "12%",
       "height": "8%"
     },
 
     "whatsapp": {
+      "top": "79%",
+      "left": "42%",
+      "width": "12%",
+      "height": "10%"
+    },
+
+    "facebook": {
       "top": "78%",
-      "left": "54%",
-      "width": "14%",
+      "left": "60%",
+      "width": "12%",
       "height": "8%"
+    },
+
+    "web": {
+      "top": "78%",
+      "left": "78%",
+      "width": "12%",
+      "height": "8%"
+    },
+
+    "video": {
+      "top": "84%",
+      "left": "48%",
+      "width": "19%",
+      "height": "10%"
     },
 
     "carrusel": {
       "top": "86%",
-      "left": "60%",
-      "width": "29%",
-      "height": "10%"
-    },
-
-    "video": {
-      "top": "85%",
-      "left": "40%",
-      "width": "19%",
+      "left": "70%",
+      "width": "27%",
       "height": "10%"
     },
 
