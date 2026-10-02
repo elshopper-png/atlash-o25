@@ -15,7 +15,7 @@
   "video_url": "/anunciantes/saul/video.mp4",
 
   "facebook": "https://www.facebook.com/profile.php?id=100085952199132",
-  "web": "https://doctorsaulgarrido.wixsite.com/inicio",
+  "tiktok": "https://www.tiktok.com/@drsaulgarrido/video/7691812867191885076?_r=1&_t=ZS-9ACcIITuUgW",
 
   "vivos": {
     "ubicacion": {
@@ -41,7 +41,7 @@
       "activo": true
     },
 
-    "web": {
+    "tiktok": {
       "activo": true
     },
 
@@ -76,7 +76,7 @@
       "height": "8%"
     },
 
-    "web": {
+    "tiktok": {
       "top": "78%",
       "left": "78%",
       "width": "12%",
